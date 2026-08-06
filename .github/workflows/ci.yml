@@ -15,16 +15,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Regenerate
-        run: python3 scripts/generate.py
-
       - name: Generated files must be committed
-        run: |
-          if ! git diff --quiet; then
-            echo "::error::Generated files are stale. Run 'python3 scripts/generate.py' and commit the result."
-            git diff --stat
-            exit 1
-          fi
+        run: python3 scripts/generate.py --check
 
       - name: Validate
         run: python3 scripts/validate.py

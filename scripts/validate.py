@@ -9,6 +9,14 @@ import re
 import sys
 from pathlib import Path
 
+
+def load_json(path: Path):
+    """Parse JSON, or return None. A malformed file is reported once, not crashed on."""
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+
 sys.path.insert(0, str(Path(__file__).parent))
 from agents_data import AGENTS, TEAMS  # noqa: E402
 
@@ -102,15 +110,12 @@ def check_json_and_plugins() -> None:
         if not p.exists():
             err(f"{rel}: missing")
             continue
-        try:
-            json.loads(p.read_text(encoding="utf-8"))
-        except json.JSONDecodeError as e:
-            err(f"{rel}: invalid JSON — {e}")
+        if load_json(p) is None:
+            err(f"{rel}: invalid JSON")
 
-    mk_path = ROOT / ".claude-plugin" / "marketplace.json"
-    if not mk_path.exists():
+    mk = load_json(ROOT / ".claude-plugin" / "marketplace.json")
+    if mk is None:
         return
-    mk = json.loads(mk_path.read_text(encoding="utf-8"))
     for required in ("name", "owner", "plugins"):
         if required not in mk:
             err(f"marketplace.json: missing required key {required!r}")
@@ -123,7 +128,10 @@ def check_json_and_plugins() -> None:
         if not manifest.exists():
             err(f"marketplace.json: {p['name']} source has no plugin.json")
             continue
-        pj = json.loads(manifest.read_text(encoding="utf-8"))
+        pj = load_json(manifest)
+        if pj is None:
+            err(f"{p['name']}: plugin.json is not valid JSON")
+            continue
         if pj["name"] != p["name"]:
             err(f"{p['name']}: plugin.json name {pj['name']!r} != marketplace entry")
 
@@ -168,10 +176,10 @@ def check_site() -> None:
 
 def check_permissions() -> None:
     """A permission allowlist shipped to other people must not grant broad host access."""
-    p = ROOT / ".claude" / "settings.json"
-    if not p.exists():
-        return
-    allow = json.loads(p.read_text(encoding="utf-8")).get("permissions", {}).get("allow", [])
+    settings = load_json(ROOT / ".claude" / "settings.json")
+    if settings is None:
+        return  # absence and malformation are already reported by check_json_and_plugins
+    allow = settings.get("permissions", {}).get("allow", [])
     for rule in allow:
         # Project-relative rules are fine; absolute and home-anchored ones are not.
         if re.search(r"\((//|/|~/|\.\./)", rule):
@@ -201,5 +209,5 @@ def main() -> int:
     return 0
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     sys.exit(main())

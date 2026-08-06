@@ -92,8 +92,11 @@ def esc(s):
     return html.escape(str(s))
 
 
-def build():
-    DOCS.mkdir(exist_ok=True)
+def build(write=None):
+    if write is None:
+        def write(path, content):
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(content, encoding="utf-8")
     n_cmd = len(list((ROOT / ".claude" / "commands").glob("*.md")))
     n_skill = len(list((ROOT / ".claude" / "skills").glob("*/SKILL.md")))
     n_rule = len(list((ROOT / ".claude" / "rules").glob("*.md")))
@@ -302,10 +305,9 @@ docs/                  GitHub Pages site        (generated)</code></pre>
 
 <script>{JS % json.dumps(payload).replace('</', '<\\/')}</script>
 """
-    (DOCS / "index.html").write_text(page, encoding="utf-8")
-    (DOCS / ".nojekyll").write_text("", encoding="utf-8")
-    print(f"site: docs/index.html ({len(payload)} agents)")
+    write(DOCS / "index.html", page)
+    write(DOCS / ".nojekyll", "")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     build()

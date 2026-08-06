@@ -11,6 +11,33 @@ For this repository the semantics are:
 - **minor** — new agents, teams, skills, commands, or rules. Additive; nothing breaks.
 - **patch** — content corrections, tooling fixes, site fixes.
 
+## [1.1.0] - 2026-08-06
+
+### Added
+
+**`generate.py --check`** — reports which generated files differ from the source without
+writing anything. CI now uses it in place of `git diff`, so staleness detection no longer
+depends on being inside a git checkout or on mutating the working tree to find out.
+
+**`/flow` command and `orchestration` skill** — runs a goal through five gated stages:
+discover, design, build, verify, release. Each stage declares what it needs and what it
+must return; no artefact, no advance. A failed verification gate sends work backwards to
+build rather than forward. The final stage produces a release package — full test output,
+version decision with the SemVer rule cited, changelog entry, migration steps, rollout
+plan, rollback path, owner, runbook — and then stops, because tagging is the user's call.
+
+### Fixed
+
+- **The validator crashed instead of reporting on malformed JSON.** A broken
+  `settings.json` raised `JSONDecodeError` out of `check_permissions` rather than
+  producing a finding. All JSON reads now go through a single tolerant loader.
+
+### Changed
+
+- CI runs `generate.py --check`, then `validate.py`. Both gate every pull request; the
+  release workflow runs the same two at the tagged commit.
+- `site_builder.build()` accepts an injected writer, so dry-run generation covers the site.
+
 ## [1.0.0] - 2026-08-06
 
 First stable release.
@@ -84,4 +111,5 @@ Self-contained: no external scripts, stylesheets, fonts, or network calls.
   Marketplaces change — verify with `/plugin` before recommending an entry.
 - No automated link checking against external URLs.
 
-[1.0.0]: https://github.com/OWNER/awesome-agents/releases/tag/v1.0.0
+[1.1.0]: https://github.com/bakhod1r/awesome-agents/releases/tag/v1.1.0
+[1.0.0]: https://github.com/bakhod1r/awesome-agents/releases/tag/v1.0.0

@@ -21,6 +21,9 @@ python3 scripts/validate.py
 
 Both must pass before you open a pull request. No dependencies beyond Python 3.11+.
 
+`generate.py --check` reports which generated files differ from the source without
+writing anything — that is what CI uses to reject stale output.
+
 ## Adding an agent
 
 ```python

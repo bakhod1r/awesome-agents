@@ -7,8 +7,8 @@ CLAUDE.md              always loaded — the delegation rule
 .claude/
   agents/              109 agent definitions        (generated)
   teams/               16 charters + roster index    (generated)
-  commands/            11 slash commands
-  skills/              10 on-demand procedures
+  commands/            12 slash commands
+  skills/              11 on-demand procedures
   rules/               7 standing standards
   hooks/               SessionStart.sh
   output-styles/       evidence.md

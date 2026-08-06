@@ -1,7 +1,7 @@
 {
   "name": "security-team",
   "description": "Security Engineering Team \u2014 8 specialist agents. Make the system secure by default and prove it with threat models, tests, and controls evidence.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "bakhod1r",
     "url": "https://github.com/bakhod1r/awesome-agents"

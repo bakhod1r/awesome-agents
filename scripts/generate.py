@@ -156,9 +156,33 @@ get the design decision recorded, then fan out to implementers.
 """
 
 
+# When dry-running, write() compares instead of writing and records what differs.
+_DRY_RUN = False
+_STALE: list[str] = []
+
+
 def write(path: Path, content: str) -> None:
+    if _DRY_RUN:
+        current = path.read_text(encoding="utf-8") if path.exists() else None
+        if current != content:
+            _STALE.append(path.relative_to(ROOT).as_posix())
+        return
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
+
+
+def check() -> list[str]:
+    """Return the generated paths that differ from what the source would produce.
+
+    Writes nothing. An empty list means the committed tree is current.
+    """
+    global _DRY_RUN, _STALE
+    _DRY_RUN, _STALE = True, []
+    try:
+        main(quiet=True)
+    finally:
+        _DRY_RUN = False
+    return list(_STALE)
 
 
 def build_marketplace() -> None:
@@ -216,7 +240,7 @@ def build_marketplace() -> None:
     }, indent=2) + "\n")
 
 
-def main() -> None:
+def main(quiet: bool = False) -> None:
     # --- agents ---
     for a in AGENTS:
         write(CLAUDE / "agents" / f"{a['slug']}.md", agent_md(a))
@@ -415,6 +439,26 @@ Scope: $ARGUMENTS
 3. `compliance-engineer` maps findings to control obligations.
 4. Report findings with severity, exploitability, evidence, and remediation. No scanner output pasted raw.
 """),
+        "flow.md": ("Run a goal through the full delivery pipeline.", """---
+description: Take a goal from product discovery through to release, one gated stage at a time.
+argument-hint: <goal, in business terms>
+---
+
+Goal: $ARGUMENTS
+
+Use the `orchestration` skill. You are the orchestrator — agents cannot call each other,
+so every hand-off passes through you.
+
+1. **Size it first.** Decide which stages this actually needs (see the skill's table) and
+   say which you are skipping and why. Do not run five stages on a one-line fix.
+2. **Run each stage** with the agents the skill names for it. Pass the previous stage's
+   output **verbatim** as input, never a paraphrase.
+3. **Check the gate** after every stage. State PASSED, FAILED, or SKIPPED with the reason.
+   A failed gate sends work backwards — report that, do not hide it.
+4. **Stop for the user** when: no measurable success metric exists, a new vendor or system
+   is being chosen, or a gate fails twice on the same issue.
+5. **Report as you go**, one block per stage, then a final summary table.
+"""),
         "incident.md": ("Run an incident response.", """---
 description: Drive an active incident from detection to postmortem.
 argument-hint: <symptom or alert>
@@ -540,6 +584,7 @@ echo "Roster: $(ls "$ROOT/.claude/agents"/*.md 2>/dev/null | wc -l | tr -d ' ') 
     }, indent=2) + "\n")
 
     write(ROOT / ".gitignore", """*.local.*
+.venv/
 .claude/settings.local.json
 .env
 .env.*
@@ -682,14 +727,9 @@ jobs:
             exit 1
           fi
 
-      - name: Regenerate and verify
+      - name: Verify the tagged commit
         run: |
-          python3 scripts/generate.py
-          if ! git diff --quiet; then
-            echo "::error::Generated files are stale at the tagged commit."
-            git diff --stat
-            exit 1
-          fi
+          python3 scripts/generate.py --check
           python3 scripts/validate.py
 
       - name: Extract release notes from CHANGELOG
@@ -720,16 +760,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Regenerate
-        run: python3 scripts/generate.py
-
       - name: Generated files must be committed
-        run: |
-          if ! git diff --quiet; then
-            echo "::error::Generated files are stale. Run 'python3 scripts/generate.py' and commit the result."
-            git diff --stat
-            exit 1
-          fi
+        run: python3 scripts/generate.py --check
 
       - name: Validate
         run: python3 scripts/validate.py
@@ -757,6 +789,9 @@ python3 scripts/validate.py
 ```
 
 Both must pass before you open a pull request. No dependencies beyond Python 3.11+.
+
+`generate.py --check` reports which generated files differ from the source without
+writing anything — that is what CI uses to reject stale output.
 
 ## Adding an agent
 
@@ -834,11 +869,7 @@ jobs:
       - name: Regenerate site
         run: python3 scripts/generate.py
       - name: Generated files must be committed
-        run: |
-          if ! git diff --quiet; then
-            echo "::error::Generated files are stale. Run 'python3 scripts/generate.py' and commit."
-            exit 1
-          fi
+        run: python3 scripts/generate.py --check
       - name: Validate
         run: python3 scripts/validate.py
       - uses: actions/upload-pages-artifact@v3
@@ -857,10 +888,27 @@ jobs:
 """)
 
     from site_builder import build
-    build()
+    build(write)
 
-    print(f"generated {len(AGENTS)} agents, {len(TEAMS)} teams")
+    if not quiet:
+        print(f"generated {len(AGENTS)} agents, {len(TEAMS)} teams")
 
 
-if __name__ == "__main__":
+def cli(argv: list[str] | None = None) -> int:
+    """Entry point. `--check` reports staleness without writing anything."""
+    argv = sys.argv[1:] if argv is None else argv
+    if "--check" in argv:
+        stale = check()
+        if not stale:
+            print("generated tree is current")
+            return 0
+        print(f"STALE — {len(stale)} generated file(s) differ from the source:")
+        for path in stale:
+            print(f"  {path}")
+        return 1
     main()
+    return 0
+
+
+if __name__ == "__main__":  # pragma: no cover
+    sys.exit(cli())
