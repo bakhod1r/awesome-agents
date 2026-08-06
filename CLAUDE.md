@@ -48,8 +48,17 @@ and run `python3 scripts/generate.py`. Hand edits to generated files are lost.
 
 ## Plugins
 
-This repo is a Claude Code marketplace: `/plugin marketplace add <org>/awesome-agents`.
+This repo is a Claude Code marketplace: `/plugin marketplace add bakhod1r/awesome-agents`.
 For vendor tooling and live data access, use the `marketplace` skill — install, never vendor.
+
+## Output compression
+
+Caveman is always on in this repository — see `AGENTS.md` for the rule other IDE agents load.
+Prose is compressed; code, commands, file paths, and error strings are reproduced verbatim.
+Drop it for security warnings, irreversible-action confirmations, and anything where a
+fragment would be ambiguous, then resume. Commits, PRs, and documentation are written normally.
+
+Install: `/plugin marketplace add juliusbrussee/caveman`, then `/caveman ultra`.
 
 ## Non-negotiable
 
