@@ -647,7 +647,53 @@ No secrets in code, logs, or prompts. No change without tests, observability, an
     n_rule = len(list((CLAUDE / "rules").glob("*.md")))
     write(ROOT / "README.md", f"""# awesome-agents
 
-{len(TEAMS)} teams, {len(AGENTS)} Claude Code subagents, generated from a single source of truth.
+**{len(AGENTS)} specialist Claude Code subagents across {len(TEAMS)} engineering teams — installable as a plugin marketplace.**
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Agents](https://img.shields.io/badge/agents-{len(AGENTS)}-8A63D2)
+![Teams](https://img.shields.io/badge/teams-{len(TEAMS)}-8A63D2)
+![Commands](https://img.shields.io/badge/commands-{n_cmd}-8A63D2)
+![Skills](https://img.shields.io/badge/skills-{n_skill}-8A63D2)
+
+Most agent collections are a folder of prompts. This one enforces a chain:
+
+> **architect decides → engineer implements → quality verifies → release ships.**
+
+No link is skipped. Every agent is generated from one source of truth, so {len(AGENTS)} roles
+stay consistent instead of drifting apart file by file.
+
+## Install
+
+```
+/plugin marketplace add {OWNER}/{REPO_NAME}
+/plugin install agent-workflow@awesome-agents
+/plugin install security-team@awesome-agents
+```
+
+Install `agent-workflow` for the commands and skills, then one plugin per team you need.
+
+## Use it
+
+| You want | Run |
+|---|---|
+| A goal taken end to end | `/flow <goal>` |
+| An architecture pass ending in an ADR | `/design <system>` |
+| The current diff reviewed on three lenses | `/review` |
+| A security audit | `/audit <scope>` |
+| A STRIDE threat model | `/threat-model <feature>` |
+| A production readiness gate | `/ship` |
+| To know who owns this work | `/agents <task>` |
+
+`/flow` walks product discovery → architecture → build → verify → release, stopping at each
+stage for approval, so the work stays reviewable rather than arriving as one opaque dump.
+
+## Teams
+
+{" · ".join(t["title"].replace(" Team", "") for t in TEAMS.values())}
+
+Full roster with every agent's `name`, mission, and model: [.claude/teams/README.md](.claude/teams/README.md).
+
+## Layout
 
 ```
 CLAUDE.md              always loaded — the delegation rule
@@ -671,30 +717,25 @@ scripts/
   site_builder.py      builds the docs site
 ```
 
-## Regenerate
+## Contributing
+
+Agent files are generated. Edit `scripts/agents_data.py`, then regenerate:
 
 ```bash
-python3 scripts/generate.py
+python3 scripts/generate.py   # rewrites everything marked (generated)
 ```
 
-Everything marked *(generated)* is rewritten. Hand edits are lost — that is deliberate:
-one source of truth keeps {len(AGENTS)} agents consistent.
-
-## Install as a plugin
-
-```
-/plugin marketplace add <your-org>/awesome-agents
-/plugin install agent-workflow@awesome-agents
-/plugin install security-team@awesome-agents
-```
+Hand edits to generated files are lost, deliberately: one source of truth is what keeps
+{len(AGENTS)} agents consistent. See [CONTRIBUTING.md](CONTRIBUTING.md) and
+[.claude/rules/agent-authoring.md](.claude/rules/agent-authoring.md).
 
 ## Docs
 
-Site: enable GitHub Pages on the `docs/` folder, or let `.github/workflows/pages.yml` deploy it.
+Site: <https://{OWNER}.github.io/{REPO_NAME}/> — deployed by `.github/workflows/pages.yml`.
 
-## Roster
+## Licence
 
-See [.claude/teams/README.md](.claude/teams/README.md).
+MIT. See [LICENSE](LICENSE).
 """)
 
     # --- marketplace: this repo is installable via /plugin ---
