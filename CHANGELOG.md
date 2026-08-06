@@ -11,6 +11,23 @@ For this repository the semantics are:
 - **minor** — new agents, teams, skills, commands, or rules. Additive; nothing breaks.
 - **patch** — content corrections, tooling fixes, site fixes.
 
+## [1.1.1] - 2026-08-06
+
+### Fixed
+
+**Real repository links everywhere.** The site and README shipped `<you>` and `<your-org>`
+placeholders in the clone and `/plugin marketplace add` commands, so neither could be
+copy-pasted. Both are now derived from the git remote, which also means a fork links to
+itself rather than to upstream.
+
+### Added
+
+**Repository links on the site** — a `GitHub` entry in the header nav and an `owner/repo`
+link in the footer. The site previously had no path back to the source.
+
+**README rewrite** — pitch, badges, an install block, and a command table, replacing a
+directory listing that never said what the project does.
+
 ## [1.1.0] - 2026-08-06
 
 ### Added
