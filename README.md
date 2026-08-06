@@ -25,6 +25,18 @@ stay consistent instead of drifting apart file by file.
 
 Install `agent-workflow` for the commands and skills, then one plugin per team you need.
 
+### Pairs well with
+
+[caveman](https://github.com/juliusbrussee/caveman) — strips filler from model prose while
+leaving code, commands, file paths, and error strings byte-identical. 109 agents with a
+ten-section contract each produce a lot of prose; this cuts the padding, not the reasoning.
+
+```
+/plugin marketplace add juliusbrussee/caveman
+/plugin install caveman@caveman
+/caveman ultra
+```
+
 ## Use it
 
 | You want | Run |
