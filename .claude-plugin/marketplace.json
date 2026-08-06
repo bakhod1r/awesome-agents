@@ -1,0 +1,97 @@
+{
+  "name": "awesome-agents",
+  "owner": {
+    "name": "bakhod1r",
+    "url": "https://github.com/bakhod1r/awesome-agents"
+  },
+  "metadata": {
+    "description": "109 specialist engineering agents across 16 teams, each written to a top 0.1% professional standard."
+  },
+  "plugins": [
+    {
+      "name": "agent-workflow",
+      "source": "./plugins/agent-workflow",
+      "description": "Delegation commands (/team /design /review /ship /audit /incident /cost /threat-model /runbook) plus the shared skills."
+    },
+    {
+      "name": "architecture-team",
+      "source": "./plugins/architecture-team",
+      "description": "Architecture Team: Enterprise Architect, Domain Architect, Backend Architect, Frontend Architect and 9 more."
+    },
+    {
+      "name": "backend-team",
+      "source": "./plugins/backend-team",
+      "description": "Backend Engineering Team: Backend Developer, Database Engineer, Migration Engineer, Event Streaming Engineer and 3 more."
+    },
+    {
+      "name": "frontend-team",
+      "source": "./plugins/frontend-team",
+      "description": "Frontend Engineering Team: Frontend Engineer, Product Designer, Web UX Quality Engineer, Design System Engineer and 3 more."
+    },
+    {
+      "name": "mobile-team",
+      "source": "./plugins/mobile-team",
+      "description": "Mobile Engineering Team: Mobile Engineer, Mobile UX Quality Engineer, iOS Engineer, Android Engineer and 1 more."
+    },
+    {
+      "name": "data-ai-team",
+      "source": "./plugins/data-ai-team",
+      "description": "Data & AI Engineering Team: Data Engineer, AI Engineer, AI Evaluation Engineer, Analytics Engineer and 2 more."
+    },
+    {
+      "name": "platform-team",
+      "source": "./plugins/platform-team",
+      "description": "Platform Engineering Team: Platform Engineer, Developer Experience (DevEx) Engineer, Open Source Engineer, Kubernetes Engineer and 2 more."
+    },
+    {
+      "name": "quality-team",
+      "source": "./plugins/quality-team",
+      "description": "Quality Engineering Team: QA, Automation QA Engineer, AI Test Automation Engineer, API Quality Engineer and 11 more."
+    },
+    {
+      "name": "security-team",
+      "source": "./plugins/security-team",
+      "description": "Security Engineering Team: Application Security Engineer, DevSecOps Engineer, Compliance Engineer, Cryptography & Secrets Engineer and 4 more."
+    },
+    {
+      "name": "release-team",
+      "source": "./plugins/release-team",
+      "description": "Release & Reliability Team: Release Manager, Site Reliability Engineer (SRE), Incident Response Engineer, Chaos Engineering Engineer and 1 more."
+    },
+    {
+      "name": "product-team",
+      "source": "./plugins/product-team",
+      "description": "Product Strategy Team: Product Manager, Product Owner, Business Analyst, Product Innovation Engineer and 1 more."
+    },
+    {
+      "name": "excellence-team",
+      "source": "./plugins/excellence-team",
+      "description": "Engineering Excellence Team: Technical Writer, Engineering Intelligence & Reporting Engineer, Modernization Engineer, Engineering Standards Engineer."
+    },
+    {
+      "name": "itops-team",
+      "source": "./plugins/itops-team",
+      "description": "IT Operations & Infrastructure Team: Systems Administrator, Network Engineer, Cloud Operations Engineer, Endpoint & Device Management Engineer and 4 more."
+    },
+    {
+      "name": "mlops-team",
+      "source": "./plugins/mlops-team",
+      "description": "MLOps & Model Operations Team: MLOps Engineer, ML Platform Engineer, Feature Store Engineer, Model Monitoring Engineer and 2 more."
+    },
+    {
+      "name": "finops-team",
+      "source": "./plugins/finops-team",
+      "description": "FinOps & Cost Engineering Team: FinOps Engineer, Cloud Cost Architect, Capacity Planning Engineer, Licensing & Vendor Manager."
+    },
+    {
+      "name": "entapps-team",
+      "source": "./plugins/entapps-team",
+      "description": "Enterprise Applications Team: ERP Engineer, CRM Engineer, Workflow Automation Engineer, Low-Code Platform Engineer and 1 more."
+    },
+    {
+      "name": "grc-team",
+      "source": "./plugins/grc-team",
+      "description": "Governance, Risk & Privacy Team: Privacy Engineer, Data Governance Engineer, Risk Analyst, Audit Engineer and 1 more."
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+<title>awesome-agents — 109 Claude Code agents</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="16 engineering teams and 109 specialist Claude Code subagents, generated from one source of truth.">
+<style>
+:root{--bg:#fbfaf8;--fg:#1c1a17;--muted:#6b655c;--line:#e4e0d8;--card:#fff;--accent:#c8603a;--code:#f2efe9}
+@media (prefers-color-scheme:dark){:root{--bg:#16150f;--fg:#eee9e0;--muted:#9a9287;--line:#2e2b24;--card:#1e1c16;--accent:#e08050;--code:#232019}}
+:root[data-theme="dark"]{--bg:#16150f;--fg:#eee9e0;--muted:#9a9287;--line:#2e2b24;--card:#1e1c16;--accent:#e08050;--code:#232019}
+:root[data-theme="light"]{--bg:#fbfaf8;--fg:#1c1a17;--muted:#6b655c;--line:#e4e0d8;--card:#fff;--accent:#c8603a;--code:#f2efe9}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);padding:56px 0 40px;background:var(--card)}
+h1{font-size:clamp(28px,5vw,44px);margin:0 0 8px;letter-spacing:-.02em}
+.sub{color:var(--muted);font-size:18px;margin:0 0 24px;max-width:62ch}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:8px}
+.stat b{display:block;font-size:30px;line-height:1.1;color:var(--accent)}
+.stat span{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+nav.top{display:flex;gap:20px;flex-wrap:wrap;margin-top:28px;font-size:15px}
+nav.top a{color:var(--fg);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px}
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 6px;letter-spacing:-.01em}
+h3{font-size:19px;margin:32px 0 10px}
+.lede{color:var(--muted);margin:0 0 26px;max-width:70ch}
+pre{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:14px 16px;overflow-x:auto;font-size:13.5px;line-height:1.6}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em}
+:not(pre)>code{background:var(--code);padding:2px 6px;border-radius:4px}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--code);font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+tr:last-child td{border-bottom:none}
+#q{width:100%;padding:13px 16px;font-size:16px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);margin-bottom:14px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.chip{padding:6px 13px;border:1px solid var(--line);border-radius:99px;background:var(--card);color:var(--muted);font-size:13px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:15px 17px}
+.card h4{margin:0 0 4px;font-size:16px}
+.card .name{font-family:ui-monospace,monospace;font-size:12px;color:var(--accent)}
+.card p{margin:8px 0 0;font-size:13.5px;color:var(--muted);line-height:1.55}
+.card .meta{margin-top:10px;font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.empty{color:var(--muted);padding:24px 0}
+footer{padding:40px 0 64px;color:var(--muted);font-size:14px}
+ol li,ul li{margin-bottom:7px}
+</style>
+
+<header><div class="wrap">
+  <h1>awesome-agents</h1>
+  <p class="sub">16 engineering teams. 109 specialist Claude Code subagents.
+  One source of truth, generated. Every agent written to a top 0.1% professional standard —
+  evidence over assertion, measurement over estimate.</p>
+  <div class="stats">
+    <div class="stat"><b>109</b><span>Agents</span></div>
+    <div class="stat"><b>16</b><span>Teams</span></div>
+    <div class="stat"><b>11</b><span>Commands</span></div>
+    <div class="stat"><b>10</b><span>Skills</span></div>
+    <div class="stat"><b>7</b><span>Rules</span></div>
+    <div class="stat"><b>17</b><span>Plugins</span></div>
+  </div>
+  <nav class="top">
+    <a href="#start">Quick start</a><a href="#roster">Roster</a><a href="#tutorial">Tutorial</a>
+    <a href="#install">Install</a><a href="#extend">Extend</a><a href="#structure">Structure</a>
+  </nav>
+</div></header>
+
+<section id="start"><div class="wrap">
+  <h2>Quick start</h2>
+  <p class="lede">Three commands. No configuration, no dependencies beyond Python 3.</p>
+<pre><code>git clone https://github.com/&lt;you&gt;/awesome-agents.git
+cd awesome-agents
+python3 scripts/generate.py   # regenerates .claude/ from scripts/agents_data.py</code></pre>
+  <p class="lede">Open the folder in Claude Code and ask normally. <code>CLAUDE.md</code> loads automatically,
+  Claude reads the roster and delegates to the right specialist. To force one:</p>
+<pre><code>Use the database-architect agent to review this schema.</code></pre>
+</div></section>
+
+<section id="roster"><div class="wrap">
+  <h2>Roster</h2>
+  <p class="lede">Search by title, domain, or mission. Showing <b id="count">109</b> agents.</p>
+  <input id="q" type="search" placeholder="Search: kubernetes, privacy, migration, cost, drift…" aria-label="Search agents">
+  <div class="chips"><button class="chip" data-team="all" aria-pressed="true">All</button><button class="chip" data-team="architecture" aria-pressed="false">Architecture</button><button class="chip" data-team="backend" aria-pressed="false">Backend Engineering</button><button class="chip" data-team="frontend" aria-pressed="false">Frontend Engineering</button><button class="chip" data-team="mobile" aria-pressed="false">Mobile Engineering</button><button class="chip" data-team="data-ai" aria-pressed="false">Data &amp; AI Engineering</button><button class="chip" data-team="platform" aria-pressed="false">Platform Engineering</button><button class="chip" data-team="quality" aria-pressed="false">Quality Engineering</button><button class="chip" data-team="security" aria-pressed="false">Security Engineering</button><button class="chip" data-team="release" aria-pressed="false">Release &amp; Reliability</button><button class="chip" data-team="product" aria-pressed="false">Product Strategy</button><button class="chip" data-team="excellence" aria-pressed="false">Engineering Excellence</button><button class="chip" data-team="itops" aria-pressed="false">IT Operations &amp; Infrastructure</button><button class="chip" data-team="mlops" aria-pressed="false">MLOps &amp; Model Operations</button><button class="chip" data-team="finops" aria-pressed="false">FinOps &amp; Cost Engineering</button><button class="chip" data-team="entapps" aria-pressed="false">Enterprise Applications</button><button class="chip" data-team="grc" aria-pressed="false">Governance, Risk &amp; Privacy</button></div>
+  <div class="cards" id="grid"></div>
+
+  <h3>Teams</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>Team</th><th>Agents</th><th>Mission</th></tr></thead>
+    <tbody><tr><td><b>Architecture Team</b></td><td>13</td><td>Own system-wide technical direction: boundaries, contracts, trade-offs, and long-term evolvability.</td></tr><tr><td><b>Backend Engineering Team</b></td><td>7</td><td>Build correct, observable, horizontally scalable services and the data layer beneath them.</td></tr><tr><td><b>Frontend Engineering Team</b></td><td>7</td><td>Deliver fast, accessible, resilient user interfaces backed by a coherent design system.</td></tr><tr><td><b>Mobile Engineering Team</b></td><td>5</td><td>Ship native-quality mobile experiences that survive poor networks, old devices, and store review.</td></tr><tr><td><b>Data &amp; AI Engineering Team</b></td><td>6</td><td>Turn raw data into trustworthy products and ship AI systems that are evaluated, not vibed.</td></tr><tr><td><b>Platform Engineering Team</b></td><td>6</td><td>Provide paved roads that make the secure, reliable path the fastest path for product teams.</td></tr><tr><td><b>Quality Engineering Team</b></td><td>15</td><td>Prevent defects from reaching users through risk-based testing, automation, and fast feedback.</td></tr><tr><td><b>Security Engineering Team</b></td><td>8</td><td>Make the system secure by default and prove it with threat models, tests, and controls evidence.</td></tr><tr><td><b>Release &amp; Reliability Team</b></td><td>5</td><td>Deliver change safely and keep production healthy against explicit SLOs and error budgets.</td></tr><tr><td><b>Product Strategy Team</b></td><td>5</td><td>Decide what to build and why, with evidence, sequencing, and measurable outcomes.</td></tr><tr><td><b>Engineering Excellence Team</b></td><td>4</td><td>Raise the floor of engineering practice through documentation, standards, and measurement.</td></tr><tr><td><b>IT Operations &amp; Infrastructure Team</b></td><td>8</td><td>Run the corporate and production infrastructure that everything else stands on: servers, network, identity, endpoints, and recovery.</td></tr><tr><td><b>MLOps &amp; Model Operations Team</b></td><td>6</td><td>Take models and prompts from a notebook to reliable, monitored, reproducible production systems.</td></tr><tr><td><b>FinOps &amp; Cost Engineering Team</b></td><td>4</td><td>Make technology spend visible, attributable, and efficient without slowing delivery down.</td></tr><tr><td><b>Enterprise Applications Team</b></td><td>5</td><td>Deliver and integrate the internal systems the business runs on: ERP, CRM, workflow, and low-code platforms.</td></tr><tr><td><b>Governance, Risk &amp; Privacy Team</b></td><td>5</td><td>Keep the organisation defensible: privacy by design, governed data, tracked risk, and audit evidence generated by systems.</td></tr></tbody>
+  </table></div>
+</div></section>
+
+<section id="tutorial"><div class="wrap">
+  <h2>Tutorial</h2>
+
+  <h3>1. The delegation chain</h3>
+  <p class="lede"><b>Architect decides. Engineer implements. Quality verifies. Release ships.</b>
+  Never skip a link. Implementation with no design decision produces rework; a release with no
+  verification produces an incident.</p>
+
+  <h3>2. Commands</h3>
+  <div class="scroll"><table>
+  <thead><tr><th>Command</th><th>What it does</th><th>Agents it pulls</th></tr></thead><tbody>
+  <tr><td><code>/team &lt;task&gt;</code></td><td>Routes any task to the owning team and delegates</td><td>picked per task</td></tr>
+  <tr><td><code>/design &lt;system&gt;</code></td><td>Architecture pass ending in a written ADR</td><td>architects</td></tr>
+  <tr><td><code>/review</code></td><td>Multi-lens review of the current diff</td><td>code-reviewer, appsec, domain QA</td></tr>
+  <tr><td><code>/ship</code></td><td>Production readiness gate — blocks on missing owner, runbook, rollback</td><td>readiness, release, SRE</td></tr>
+  <tr><td><code>/audit &lt;scope&gt;</code></td><td>Security and compliance audit</td><td>security architect, appsec, sec-test, compliance</td></tr>
+  <tr><td><code>/incident &lt;symptom&gt;</code></td><td>Incident command, mitigate first, postmortem after</td><td>incident response, SRE, SOC</td></tr>
+  <tr><td><code>/threat-model &lt;system&gt;</code></td><td>STRIDE model with mitigations and verifying tests</td><td>security architect, pentester, privacy</td></tr>
+  <tr><td><code>/cost &lt;scope&gt;</code></td><td>Attribution, waste, unit economics, scale projection</td><td>FinOps, cost architect, capacity</td></tr>
+  <tr><td><code>/runbook &lt;alert&gt;</code></td><td>Runbook an on-call engineer can execute cold</td><td>SRE, observability</td></tr>
+  <tr><td><code>/agents &lt;domain&gt;</code></td><td>Finds which agents own a kind of work</td><td>—</td></tr>
+  <tr><td><code>/onboard</code></td><td>Explains the system to a newcomer</td><td>—</td></tr>
+  </tbody></table></div>
+
+  <h3>3. Worked example</h3>
+  <p class="lede">Shipping a payments retry mechanism, end to end:</p>
+<pre><code>/design payment retry with idempotency keys
+  → backend-architect + integration-architect produce options and failure modes
+  → decision written to docs/adr/0007-payment-retry.md
+
+/team implement the retry design
+  → backend-developer implements; database-engineer adds the idempotency table
+
+/review
+  → code-reviewer, application-security-engineer, api-quality-engineer
+  → findings ranked by severity, each with a concrete failure scenario
+
+/ship
+  → production-readiness-engineer blocks until the runbook and rollback exist
+  → release-manager defines canary gates and abort criteria</code></pre>
+
+  <h3>4. What every agent guarantees</h3>
+  <p class="lede">All 109 agents carry the same ten sections — Role, Mission, Primary Objective,
+  Responsibilities, Collaboration, Inputs, Outputs, Decision Rules, Quality Bar, Output Format — plus a
+  shared operating standard:</p>
+  <ul>
+    <li>Read the actual code, data, or telemetry before concluding. Never answer from memory about system state.</li>
+    <li>Label what was <b>verified</b> versus <b>inferred</b>.</li>
+    <li>Quantify. "Slow" is not a finding; "p99 480 ms against a 200 ms budget" is.</li>
+    <li>Deliver the whole scope. If part is blocked, finish the rest and name what was left out.</li>
+    <li>Escalate with a proposed decision, never a bare problem.</li>
+  </ul>
+
+  <h3>5. Standing rules</h3>
+  <p class="lede">Applied to all work without being asked: engineering standard, security baseline,
+  testing, documentation, data &amp; privacy, agent authoring, output discipline.</p>
+</div></section>
+
+<section id="install"><div class="wrap">
+  <h2>Install as a plugin</h2>
+  <p class="lede">This repository is also a Claude Code plugin marketplace — 17 plugins,
+  one per team plus the shared workflow. Install only the teams you need.</p>
+<pre><code>/plugin marketplace add &lt;your-org&gt;/awesome-agents
+/plugin install agent-workflow@awesome-agents     # commands + skills
+/plugin install security-team@awesome-agents      # that team's agents
+/plugin install backend-team@awesome-agents</code></pre>
+  <p class="lede">Pair with official marketplaces for vendor tooling and live data access.
+  Plugins supply <b>tools</b>; this roster supplies <b>judgement</b>.</p>
+<pre><code>/plugin marketplace add anthropics/skills
+/plugin marketplace add anthropics/claude-plugins-community</code></pre>
+  <div class="scroll"><table>
+  <thead><tr><th>Need</th><th>Install</th><th>Pairs with</th></tr></thead><tbody>
+  <tr><td>Observability queries</td><td><code>datadog</code>, <code>grafana-mcp</code>, <code>honeycomb</code></td><td>observability-engineer, SRE</td></tr>
+  <tr><td>Database access</td><td><code>mongodb</code>, <code>clickhouse</code>, <code>neon</code></td><td>database-engineer</td></tr>
+  <tr><td>Security scanning</td><td><code>claude-security</code>, <code>aikido</code></td><td>application-security-engineer</td></tr>
+  <tr><td>LLM tracing &amp; evals</td><td><code>langfuse-observability</code>, <code>mlflow</code>, <code>deepeval</code></td><td>ai-evaluation-engineer, llmops-engineer</td></tr>
+  <tr><td>Issue tracking</td><td><code>linear</code>, <code>atlassian</code>, <code>github</code></td><td>technical-project-manager</td></tr>
+  <tr><td>Design handoff</td><td><code>figma</code></td><td>product-designer</td></tr>
+  </tbody></table></div>
+  <p class="lede"><b>Install, never vendor.</b> A copied plugin never receives upstream fixes.
+  Marketplace plugins are third-party code with tool access — read the source before installing
+  anything that touches production credentials.</p>
+</div></section>
+
+<section id="extend"><div class="wrap">
+  <h2>Extend</h2>
+  <p class="lede">Agent and team files are <b>generated</b>. Edit the data, never the output.</p>
+<pre><code># scripts/agents_data.py
+dict(
+    slug="graph-database-engineer", title="Graph Database Engineer", team="backend",
+    model="sonnet", tools=FULL,
+    mission="Design and operate graph stores for traversal-heavy workloads.",
+    focus=[...],      # 5 responsibilities
+    inputs=[...], outputs=[...],
+    rules=[...],      # decision rules that would survive a design review
+    bar=[...],        # what "done well" means, measurably
+)</code></pre>
+<pre><code>python3 scripts/generate.py   # rewrites .claude/agents/, .claude/teams/, docs/</code></pre>
+  <p class="lede">Hand edits to <code>.claude/agents/*.md</code> are lost on the next run. That is deliberate —
+  one source of truth means 109 agents stay consistent.</p>
+  <h3>Writing a good agent</h3>
+  <ul>
+    <li><b>Decision rules must be opinionated.</b> "Index to the query, not to the column" is a rule.
+        "Follow best practices" is noise.</li>
+    <li><b>Quality bar must be checkable.</b> "Restore drill passing within RTO", not "high quality".</li>
+    <li><b>Least privilege on tools.</b> Architects and reviewers get read-only.</li>
+    <li><b>Model choice:</b> <code>opus</code> for architecture, security, and judgement-heavy roles;
+        <code>sonnet</code> otherwise.</li>
+  </ul>
+</div></section>
+
+<section id="structure"><div class="wrap">
+  <h2>Structure</h2>
+<pre><code>CLAUDE.md              always loaded — the delegation rule
+.mcp.json              MCP servers (must sit at repo root)
+.claude/
+  agents/              109 agent definitions          (generated)
+  teams/               16 charters + roster index      (generated)
+  commands/            11 slash commands
+  skills/              10 on-demand procedures
+  rules/               7 standing standards
+  hooks/               SessionStart.sh — loads the roster
+  output-styles/       evidence.md
+  settings.json        permissions + hook registry
+scripts/
+  agents_data.py       <b>edit this</b>
+  agents_data_ext.py   second wave of teams
+  generate.py          <b>then run this</b>
+  site_builder.py      builds this page
+docs/                  GitHub Pages site        (generated)</code></pre>
+</div></section>
+
+<footer><div class="wrap">
+  Generated by <code>python3 scripts/generate.py</code>. Verified over asserted.
+  Measured over estimated. Reversible over clever.
+</div></footer>
+
+<script>
+const AG=[{"title": "AI Architect", "slug": "ai-architect", "mission": "Design AI systems end to end: model strategy, retrieval, evaluation, safety, and cost.", "team": "architecture", "teamTitle": "Architecture Team", "model": "opus"}, {"title": "AI Engineer", "slug": "ai-engineer", "mission": "Ship AI features that meet quality, latency, and cost targets under real usage.", "team": "data-ai", "teamTitle": "Data & AI Engineering Team", "model": "opus"}, {"title": "AI Evaluation Engineer", "slug": "ai-evaluation-engineer", "mission": "Measure AI quality honestly with datasets, metrics, and judges that survive scrutiny.", "team": "data-ai", "teamTitle": "Data & AI Engineering Team", "model": "opus"}, {"title": "AI Test Automation Engineer", "slug": "ai-test-automation-engineer", "mission": "Use AI to generate, maintain, and prioritise tests without lowering the evidence bar.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "sonnet"}, {"title": "API Gateway Engineer", "slug": "api-gateway-engineer", "mission": "Own the edge of the API: authentication, rate limiting, routing, and tenant isolation.", "team": "backend", "teamTitle": "Backend Engineering Team", "model": "sonnet"}, {"title": "API Quality Engineer", "slug": "api-quality-engineer", "mission": "Guarantee API correctness, compatibility, and resilience at the contract level.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "sonnet"}, {"title": "Accessibility QA Engineer", "slug": "accessibility-qa-engineer", "mission": "Ensure products are usable by people with disabilities and meet WCAG 2.2 AA.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "sonnet"}, {"title": "Analytics Engineer", "slug": "analytics-engineer", "mission": "Turn raw tables into a tested, documented metric layer the business can trust.", "team": "data-ai", "teamTitle": "Data & AI Engineering Team", "model": "sonnet"}, {"title": "Android Engineer", "slug": "android-engineer", "mission": "Build Android features that behave correctly across a fragmented device, OEM, and version matrix.", "team": "mobile", "teamTitle": "Mobile Engineering Team", "model": "sonnet"}, {"title": "App Release Engineer", "slug": "app-release-engineer", "mission": "Get mobile builds to users predictably, with staged rollout and a kill switch that works.", "team": "mobile", "teamTitle": "Mobile Engineering Team", "model": "sonnet"}, {"title": "Application Security Engineer", "slug": "application-security-engineer", "mission": "Build security into applications through review, tooling, and developer enablement.", "team": "security", "teamTitle": "Security Engineering Team", "model": "opus"}, {"title": "Audit Engineer", "slug": "audit-engineer", "mission": "Make audits routine by generating control evidence continuously from the systems themselves.", "team": "grc", "teamTitle": "Governance, Risk & Privacy Team", "model": "sonnet"}, {"title": "Automation QA Engineer", "slug": "automation-qa-engineer", "mission": "Build fast, stable automated test suites that teams actually trust.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "sonnet"}, {"title": "Backend Architect", "slug": "backend-architect", "mission": "Design service topology, contracts, and failure behaviour for backend systems.", "team": "architecture", "teamTitle": "Architecture Team", "model": "opus"}, {"title": "Backend Developer", "slug": "backend-developer", "mission": "Implement backend services and APIs that are correct, tested, observable, and fast.", "team": "backend", "teamTitle": "Backend Engineering Team", "model": "sonnet"}, {"title": "Backup & Disaster Recovery Engineer", "slug": "backup-disaster-recovery-engineer", "mission": "Guarantee the organisation can come back from data loss, ransomware, or site failure.", "team": "itops", "teamTitle": "IT Operations & Infrastructure Team", "model": "sonnet"}, {"title": "Bug Hunter and Exploratory Testing Engineer", "slug": "bug-hunter-exploratory-testing-engineer", "mission": "Find the defects scripted testing never reaches by attacking the system deliberately.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "opus"}, {"title": "Business Analyst", "slug": "business-analyst", "mission": "Translate business processes and rules into precise, verifiable requirements.", "team": "product", "teamTitle": "Product Strategy Team", "model": "sonnet"}, {"title": "CRM Engineer", "slug": "crm-engineer", "mission": "Make the CRM a trustworthy system of record for customer relationships and revenue process.", "team": "entapps", "teamTitle": "Enterprise Applications Team", "model": "sonnet"}, {"title": "Caching Engineer", "slug": "caching-engineer", "mission": "Cut latency and load with caches that never serve wrong data for longer than agreed.", "team": "backend", "teamTitle": "Backend Engineering Team", "model": "sonnet"}, {"title": "Capacity Planning Engineer", "slug": "capacity-planning-engineer", "mission": "Ensure capacity exists when demand arrives, without paying for idle headroom all year.", "team": "finops", "teamTitle": "FinOps & Cost Engineering Team", "model": "sonnet"}, {"title": "Chaos Engineering Engineer", "slug": "chaos-engineering-engineer", "mission": "Find weaknesses by injecting controlled failure into real systems before reality does.", "team": "release", "teamTitle": "Release & Reliability Team", "model": "opus"}, {"title": "Cloud Cost Architect", "slug": "cloud-cost-architect", "mission": "Design systems whose cost curve stays sane as they scale.", "team": "finops", "teamTitle": "FinOps & Cost Engineering Team", "model": "opus"}, {"title": "Cloud Operations Engineer", "slug": "cloud-operations-engineer", "mission": "Operate cloud estates safely: accounts, quotas, guardrails, and day-two operations.", "team": "itops", "teamTitle": "IT Operations & Infrastructure Team", "model": "sonnet"}, {"title": "Cloud Security Engineer", "slug": "cloud-security-engineer", "mission": "Secure the cloud estate: identity, configuration, workloads, and data at rest and in motion.", "team": "security", "teamTitle": "Security Engineering Team", "model": "opus"}, {"title": "Code Reviewer", "slug": "code-reviewer", "mission": "Catch correctness, security, and maintainability defects before merge.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "opus"}, {"title": "Compatibility Test Engineer", "slug": "compatibility-test-engineer", "mission": "Verify the product works across the supported matrix of platforms, versions, and locales.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "sonnet"}, {"title": "Compliance Engineer", "slug": "compliance-engineer", "mission": "Turn regulatory requirements into automated, evidenced controls rather than paperwork.", "team": "security", "teamTitle": "Security Engineering Team", "model": "opus"}, {"title": "Cryptography & Secrets Engineer", "slug": "cryptography-secrets-engineer", "mission": "Own key material end to end: generation, storage, rotation, and destruction.", "team": "security", "teamTitle": "Security Engineering Team", "model": "opus"}, {"title": "Data Architect", "slug": "data-architect", "mission": "Design the data platform: modelling, lineage, governance, and access.", "team": "architecture", "teamTitle": "Architecture Team", "model": "opus"}, {"title": "Data Engineer", "slug": "data-engineer", "mission": "Build reliable pipelines that deliver correct data on time with visible lineage.", "team": "data-ai", "teamTitle": "Data & AI Engineering Team", "model": "sonnet"}, {"title": "Data Governance Engineer", "slug": "data-governance-engineer", "mission": "Make data trustworthy, findable, classified, and correctly permissioned across the organisation.", "team": "grc", "teamTitle": "Governance, Risk & Privacy Team", "model": "sonnet"}, {"title": "Data Quality Test Engineer", "slug": "data-quality-test-engineer", "mission": "Prove data is complete, accurate, timely, and consistent before anyone decides on it.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "sonnet"}, {"title": "Database Architect", "slug": "database-architect", "mission": "Design database topology, schemas, and scaling strategy for correctness under load.", "team": "architecture", "teamTitle": "Architecture Team", "model": "opus"}, {"title": "Database Engineer", "slug": "database-engineer", "mission": "Keep databases fast, correct, and operable through tuning, migrations, and monitoring.", "team": "backend", "teamTitle": "Backend Engineering Team", "model": "sonnet"}, {"title": "Database Test Engineer", "slug": "database-test-engineer", "mission": "Test the database layer: correctness under concurrency, migrations, and recovery.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "sonnet"}, {"title": "Design System Engineer", "slug": "design-system-engineer", "mission": "Build and maintain the component library so every surface stays consistent without forking.", "team": "frontend", "teamTitle": "Frontend Engineering Team", "model": "sonnet"}, {"title": "Desktop Engineer", "slug": "desktop-engineer", "mission": "Ship desktop applications that integrate with the operating system and update themselves safely.", "team": "frontend", "teamTitle": "Frontend Engineering Team", "model": "sonnet"}, {"title": "DevSecOps Engineer", "slug": "devsecops-engineer", "mission": "Automate security controls across the software supply chain and runtime.", "team": "security", "teamTitle": "Security Engineering Team", "model": "opus"}, {"title": "Developer Experience (DevEx) Engineer", "slug": "developer-experience-engineer", "mission": "Shorten the loop from idea to production for every engineer in the organisation.", "team": "platform", "teamTitle": "Platform Engineering Team", "model": "sonnet"}, {"title": "Distributed Systems Engineer", "slug": "distributed-systems-engineer", "mission": "Keep state correct across processes, machines, and partial failure.", "team": "backend", "teamTitle": "Backend Engineering Team", "model": "opus"}, {"title": "Domain Architect", "slug": "domain-architect", "mission": "Model the business domain and define bounded contexts that keep coupling low.", "team": "architecture", "teamTitle": "Architecture Team", "model": "opus"}, {"title": "ERP Engineer", "slug": "erp-engineer", "mission": "Configure and extend the ERP so business processes run correctly and the upgrade path stays open.", "team": "entapps", "teamTitle": "Enterprise Applications Team", "model": "sonnet"}, {"title": "Endpoint & Device Management Engineer", "slug": "endpoint-management-engineer", "mission": "Keep every laptop, phone, and workstation compliant, encrypted, and recoverable.", "team": "itops", "teamTitle": "IT Operations & Infrastructure Team", "model": "sonnet"}, {"title": "Engineering Intelligence & Reporting Engineer", "slug": "engineering-intelligence-reporting-engineer", "mission": "Measure engineering health with metrics that drive better decisions, not scoreboards.", "team": "excellence", "teamTitle": "Engineering Excellence Team", "model": "sonnet"}, {"title": "Engineering Standards Engineer", "slug": "engineering-standards-engineer", "mission": "Turn engineering standards into automated defaults rather than documents nobody reads.", "team": "excellence", "teamTitle": "Engineering Excellence Team", "model": "sonnet"}, {"title": "Enterprise Architect", "slug": "enterprise-architect", "mission": "Align the technology landscape with business capabilities and a multi-year roadmap.", "team": "architecture", "teamTitle": "Architecture Team", "model": "opus"}, {"title": "Event Streaming Engineer", "slug": "event-streaming-engineer", "mission": "Move events between services exactly as often as the business requires, and prove it.", "team": "backend", "teamTitle": "Backend Engineering Team", "model": "sonnet"}, {"title": "Feature Store Engineer", "slug": "feature-store-engineer", "mission": "Deliver consistent, fresh, point-in-time-correct features to both training and serving.", "team": "mlops", "teamTitle": "MLOps & Model Operations Team", "model": "sonnet"}, {"title": "FinOps Engineer", "slug": "finops-engineer", "mission": "Make spend visible and attributable, then drive down waste with evidence.", "team": "finops", "teamTitle": "FinOps & Cost Engineering Team", "model": "sonnet"}, {"title": "Frontend Architect", "slug": "frontend-architect", "mission": "Define frontend architecture, rendering strategy, and the design system contract.", "team": "architecture", "teamTitle": "Architecture Team", "model": "opus"}, {"title": "Frontend Engineer", "slug": "frontend-engineer", "mission": "Build accessible, performant interfaces that hold up on slow networks and real devices.", "team": "frontend", "teamTitle": "Frontend Engineering Team", "model": "sonnet"}, {"title": "IT Policy Engineer", "slug": "it-policy-engineer", "mission": "Write policy people can follow and machines can enforce, then retire the policy that no longer applies.", "team": "grc", "teamTitle": "Governance, Risk & Privacy Team", "model": "sonnet"}, {"title": "IT Service Desk Engineer", "slug": "it-service-desk-engineer", "mission": "Resolve user-facing IT issues fast and eliminate their causes rather than their symptoms.", "team": "itops", "teamTitle": "IT Operations & Infrastructure Team", "model": "sonnet"}, {"title": "Identity & Access Management (IAM) Engineer", "slug": "iam-engineer", "mission": "Ensure the right people and workloads have exactly the access they need, and nothing more.", "team": "itops", "teamTitle": "IT Operations & Infrastructure Team", "model": "opus"}, {"title": "Incident Response Engineer", "slug": "incident-response-engineer", "mission": "Detect, contain, and resolve incidents quickly, then make the same failure impossible.", "team": "release", "teamTitle": "Release & Reliability Team", "model": "opus"}, {"title": "Integration Architect", "slug": "integration-architect", "mission": "Design how systems exchange data reliably across trust and ownership boundaries.", "team": "architecture", "teamTitle": "Architecture Team", "model": "opus"}, {"title": "Internal Tools Engineer", "slug": "internal-tools-engineer", "mission": "Build the internal tools that turn manual operational work into safe self-service.", "team": "platform", "teamTitle": "Platform Engineering Team", "model": "sonnet"}, {"title": "Internationalization Engineer", "slug": "internationalization-engineer", "mission": "Make the product correct in every supported locale, script, and writing direction.", "team": "frontend", "teamTitle": "Frontend Engineering Team", "model": "sonnet"}, {"title": "Kubernetes Engineer", "slug": "kubernetes-engineer", "mission": "Operate Kubernetes clusters that are secure, efficient, and boring to run.", "team": "platform", "teamTitle": "Platform Engineering Team", "model": "sonnet"}, {"title": "LLMOps Engineer", "slug": "llmops-engineer", "mission": "Operate LLM systems in production: routing, caching, quotas, observability, and failover.", "team": "mlops", "teamTitle": "MLOps & Model Operations Team", "model": "opus"}, {"title": "Licensing & Vendor Manager", "slug": "licensing-vendor-manager", "mission": "Keep software licensing compliant and vendor spend justified by actual use.", "team": "finops", "teamTitle": "FinOps & Cost Engineering Team", "model": "sonnet"}, {"title": "Low-Code Platform Engineer", "slug": "low-code-platform-engineer", "mission": "Enable safe citizen development: governed, monitored, and prevented from becoming shadow IT.", "team": "entapps", "teamTitle": "Enterprise Applications Team", "model": "sonnet"}, {"title": "ML Platform Engineer", "slug": "ml-platform-engineer", "mission": "Provide the compute, storage, and tooling that lets ML teams move without touching infrastructure.", "team": "mlops", "teamTitle": "MLOps & Model Operations Team", "model": "sonnet"}, {"title": "MLOps Engineer", "slug": "mlops-engineer", "mission": "Make model training and deployment reproducible, automated, and reversible.", "team": "mlops", "teamTitle": "MLOps & Model Operations Team", "model": "opus"}, {"title": "Migration Engineer", "slug": "migration-engineer", "mission": "Move systems and data between platforms without downtime or loss.", "team": "backend", "teamTitle": "Backend Engineering Team", "model": "sonnet"}, {"title": "Mobile Architect", "slug": "mobile-architect", "mission": "Define mobile app architecture, offline model, and release strategy across platforms.", "team": "architecture", "teamTitle": "Architecture Team", "model": "opus"}, {"title": "Mobile Engineer", "slug": "mobile-engineer", "mission": "Build mobile features that are fast, offline-tolerant, and crash-free.", "team": "mobile", "teamTitle": "Mobile Engineering Team", "model": "sonnet"}, {"title": "Mobile UX Quality Engineer", "slug": "mobile-ux-quality-engineer", "mission": "Validate mobile experience quality across devices, networks, and interruption scenarios.", "team": "mobile", "teamTitle": "Mobile Engineering Team", "model": "sonnet"}, {"title": "Model Monitoring Engineer", "slug": "model-monitoring-engineer", "mission": "Detect model degradation in production before users or the business feel it.", "team": "mlops", "teamTitle": "MLOps & Model Operations Team", "model": "sonnet"}, {"title": "Modernization Engineer", "slug": "modernization-engineer", "mission": "Make legacy systems safe to change again, incrementally and without a rewrite.", "team": "excellence", "teamTitle": "Engineering Excellence Team", "model": "opus"}, {"title": "Network Engineer", "slug": "network-engineer", "mission": "Design and operate networks that are fast, segmented, observable, and recoverable.", "team": "itops", "teamTitle": "IT Operations & Infrastructure Team", "model": "sonnet"}, {"title": "Observability Engineer", "slug": "observability-engineer", "mission": "Build the telemetry platform that makes every production question answerable in minutes.", "team": "platform", "teamTitle": "Platform Engineering Team", "model": "sonnet"}, {"title": "Observability Test Engineer", "slug": "observability-test-engineer", "mission": "Ensure production is actually debuggable: signals exist, are correct, and are actionable.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "sonnet"}, {"title": "Open Source Engineer", "slug": "open-source-engineer", "mission": "Manage dependency health, licensing, and the organisation's open source participation.", "team": "platform", "teamTitle": "Platform Engineering Team", "model": "sonnet"}, {"title": "Penetration Tester", "slug": "penetration-tester", "mission": "Prove exploitability within authorised scope, and hand back findings engineers can fix.", "team": "security", "teamTitle": "Security Engineering Team", "model": "opus"}, {"title": "Performance Test Engineer", "slug": "performance-test-engineer", "mission": "Prove the system meets latency and throughput targets and find where it breaks.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "sonnet"}, {"title": "Platform Architect", "slug": "platform-architect", "mission": "Design the internal platform: compute, networking, delivery, and tenancy model.", "team": "architecture", "teamTitle": "Architecture Team", "model": "opus"}, {"title": "Platform Engineer", "slug": "platform-engineer", "mission": "Build and operate the infrastructure and delivery pipelines other teams depend on.", "team": "platform", "teamTitle": "Platform Engineering Team", "model": "sonnet"}, {"title": "Privacy Engineer", "slug": "privacy-engineer", "mission": "Build privacy into systems technically: minimisation, purpose limitation, and enforceable rights.", "team": "grc", "teamTitle": "Governance, Risk & Privacy Team", "model": "opus"}, {"title": "Product Design Architect", "slug": "product-design-architect", "mission": "Own the design system architecture and interaction patterns across every surface.", "team": "architecture", "teamTitle": "Architecture Team", "model": "opus"}, {"title": "Product Designer", "slug": "product-designer", "mission": "Design flows that solve the user problem with the least interface possible.", "team": "frontend", "teamTitle": "Frontend Engineering Team", "model": "sonnet"}, {"title": "Product Innovation Engineer", "slug": "product-innovation-engineer", "mission": "De-risk new bets quickly through prototypes and honest experiments.", "team": "product", "teamTitle": "Product Strategy Team", "model": "opus"}, {"title": "Product Manager", "slug": "product-manager", "mission": "Decide what to build next based on evidence, and define what success means.", "team": "product", "teamTitle": "Product Strategy Team", "model": "opus"}, {"title": "Product Owner", "slug": "product-owner", "mission": "Keep the backlog ready, ordered, and honest so delivery never stalls on ambiguity.", "team": "product", "teamTitle": "Product Strategy Team", "model": "sonnet"}, {"title": "Production Readiness Engineer", "slug": "production-readiness-engineer", "mission": "Ensure nothing reaches production without ownership, observability, and an operational plan.", "team": "release", "teamTitle": "Release & Reliability Team", "model": "sonnet"}, {"title": "Prompt Engineer", "slug": "prompt-engineer", "mission": "Design, version, and optimise prompts as engineered artefacts with measured quality.", "team": "mlops", "teamTitle": "MLOps & Model Operations Team", "model": "opus"}, {"title": "QA", "slug": "qa", "mission": "Verify that what shipped matches what was intended, and find what nobody specified.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "sonnet"}, {"title": "QA Architect", "slug": "qa-architect", "mission": "Design the quality strategy: what is tested, at which layer, and with what feedback speed.", "team": "architecture", "teamTitle": "Architecture Team", "model": "opus"}, {"title": "Release Manager", "slug": "release-manager", "mission": "Get changes to production predictably, with the risk visible and the rollback ready.", "team": "release", "teamTitle": "Release & Reliability Team", "model": "sonnet"}, {"title": "Reliability Test Engineer", "slug": "reliability-test-engineer", "mission": "Verify the system degrades gracefully and recovers under failure.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "sonnet"}, {"title": "Retrieval & Search Engineer", "slug": "retrieval-search-engineer", "mission": "Build retrieval that returns the right context, measured against a labelled set rather than vibes.", "team": "data-ai", "teamTitle": "Data & AI Engineering Team", "model": "opus"}, {"title": "Risk Analyst", "slug": "risk-analyst", "mission": "Identify, quantify, and track technology risk so decisions are made with the exposure visible.", "team": "grc", "teamTitle": "Governance, Risk & Privacy Team", "model": "opus"}, {"title": "Security Architect", "slug": "security-architect", "mission": "Design security architecture: trust boundaries, identity, secrets, and defence in depth.", "team": "architecture", "teamTitle": "Architecture Team", "model": "opus"}, {"title": "Security Operations (SOC) Analyst", "slug": "soc-analyst", "mission": "Detect, triage, and contain attacks in progress with evidence and speed.", "team": "security", "teamTitle": "Security Engineering Team", "model": "opus"}, {"title": "Security Test Engineer", "slug": "security-test-engineer", "mission": "Test the system the way an attacker would, within authorised scope.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "opus"}, {"title": "Site Reliability Engineer (SRE)", "slug": "site-reliability-engineer", "mission": "Keep production reliable against explicit SLOs while enabling fast change.", "team": "release", "teamTitle": "Release & Reliability Team", "model": "opus"}, {"title": "Streaming Data Engineer", "slug": "streaming-data-engineer", "mission": "Deliver correct real-time data under late arrival, replay, and out-of-order events.", "team": "data-ai", "teamTitle": "Data & AI Engineering Team", "model": "sonnet"}, {"title": "Supply Chain Security Engineer", "slug": "supply-chain-security-engineer", "mission": "Prove that what runs in production is exactly what was reviewed, built, and approved.", "team": "security", "teamTitle": "Security Engineering Team", "model": "opus"}, {"title": "Systems Administrator", "slug": "systems-administrator", "mission": "Keep servers and operating systems healthy, patched, hardened, and inventoried.", "team": "itops", "teamTitle": "IT Operations & Infrastructure Team", "model": "sonnet"}, {"title": "Systems Integration Engineer", "slug": "systems-integration-engineer", "mission": "Connect enterprise systems so data stays consistent across every business boundary.", "team": "entapps", "teamTitle": "Enterprise Applications Team", "model": "sonnet"}, {"title": "Technical Project Manager Agent", "slug": "technical-project-manager", "mission": "Drive complex technical delivery: dependencies, risks, and truthful status.", "team": "product", "teamTitle": "Product Strategy Team", "model": "sonnet"}, {"title": "Technical Writer", "slug": "technical-writer", "mission": "Produce documentation that gets a reader to a correct outcome quickly.", "team": "excellence", "teamTitle": "Engineering Excellence Team", "model": "sonnet"}, {"title": "Test Data Engineer", "slug": "test-data-engineer", "mission": "Provide realistic, safe, on-demand test data for every environment.", "team": "quality", "teamTitle": "Quality Engineering Team", "model": "sonnet"}, {"title": "Virtualization Engineer", "slug": "virtualization-engineer", "mission": "Run hypervisor and virtual desktop platforms with predictable performance and clean capacity headroom.", "team": "itops", "teamTitle": "IT Operations & Infrastructure Team", "model": "sonnet"}, {"title": "Web Performance Engineer", "slug": "web-performance-engineer", "mission": "Hold Core Web Vitals budgets on real user devices and networks, not lab averages.", "team": "frontend", "teamTitle": "Frontend Engineering Team", "model": "sonnet"}, {"title": "Web UX Quality Engineer", "slug": "web-ux-quality-engineer", "mission": "Verify web experience quality: usability, responsiveness, performance, and polish.", "team": "frontend", "teamTitle": "Frontend Engineering Team", "model": "sonnet"}, {"title": "Workflow Automation Engineer", "slug": "workflow-automation-engineer", "mission": "Automate business processes end to end with reliable, observable, recoverable workflows.", "team": "entapps", "teamTitle": "Enterprise Applications Team", "model": "sonnet"}, {"title": "iOS Engineer", "slug": "ios-engineer", "mission": "Build iOS features that feel native, respect platform conventions, and survive App Review.", "team": "mobile", "teamTitle": "Mobile Engineering Team", "model": "sonnet"}];
+const grid=document.getElementById('grid'),q=document.getElementById('q');
+let team='all';
+function render(){
+  const t=q.value.trim().toLowerCase();
+  const out=AG.filter(a=>(team==='all'||a.team===team)&&(!t||(a.title+' '+a.slug+' '+a.mission+' '+a.teamTitle).toLowerCase().includes(t)));
+  document.getElementById('count').textContent=out.length;
+  grid.textContent='';
+  if(!out.length){const e=document.createElement('p');e.className='empty';
+    e.textContent='No agent matches. That is a roster gap worth filing.';grid.append(e);return;}
+  const frag=document.createDocumentFragment();
+  for(const a of out){
+    const c=document.createElement('div');c.className='card';
+    const h=document.createElement('h4');h.textContent=a.title;
+    const n=document.createElement('div');n.className='name';n.textContent=a.slug;
+    const p=document.createElement('p');p.textContent=a.mission;
+    const m=document.createElement('div');m.className='meta';m.textContent=`${a.teamTitle} · ${a.model}`;
+    c.append(h,n,p,m);frag.append(c);
+  }
+  grid.append(frag);
+}
+q.addEventListener('input',render);
+document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
+  team=c.dataset.team;
+  document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===c));
+  render();
+}));
+render();
+</script>

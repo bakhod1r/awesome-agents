@@ -1,0 +1,16 @@
+{
+  "name": "product-team",
+  "description": "Product Strategy Team \u2014 5 specialist agents. Decide what to build and why, with evidence, sequencing, and measurable outcomes.",
+  "version": "1.0.0",
+  "author": {
+    "name": "bakhod1r",
+    "url": "https://github.com/bakhod1r/awesome-agents"
+  },
+  "homepage": "https://github.com/bakhod1r/awesome-agents",
+  "keywords": [
+    "claude-code",
+    "agents",
+    "subagents",
+    "product"
+  ]
+}

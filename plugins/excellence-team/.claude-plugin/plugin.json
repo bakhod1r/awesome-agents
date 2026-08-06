@@ -1,0 +1,16 @@
+{
+  "name": "excellence-team",
+  "description": "Engineering Excellence Team \u2014 4 specialist agents. Raise the floor of engineering practice through documentation, standards, and measurement.",
+  "version": "1.0.0",
+  "author": {
+    "name": "bakhod1r",
+    "url": "https://github.com/bakhod1r/awesome-agents"
+  },
+  "homepage": "https://github.com/bakhod1r/awesome-agents",
+  "keywords": [
+    "claude-code",
+    "agents",
+    "subagents",
+    "excellence"
+  ]
+}

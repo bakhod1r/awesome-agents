@@ -1,0 +1,16 @@
+{
+  "name": "data-ai-team",
+  "description": "Data & AI Engineering Team \u2014 6 specialist agents. Turn raw data into trustworthy products and ship AI systems that are evaluated, not vibed.",
+  "version": "1.0.0",
+  "author": {
+    "name": "bakhod1r",
+    "url": "https://github.com/bakhod1r/awesome-agents"
+  },
+  "homepage": "https://github.com/bakhod1r/awesome-agents",
+  "keywords": [
+    "claude-code",
+    "agents",
+    "subagents",
+    "data-ai"
+  ]
+}
