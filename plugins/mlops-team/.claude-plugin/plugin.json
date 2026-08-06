@@ -1,7 +1,7 @@
 {
   "name": "mlops-team",
   "description": "MLOps & Model Operations Team \u2014 6 specialist agents. Take models and prompts from a notebook to reliable, monitored, reproducible production systems.",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "author": {
     "name": "bakhod1r",
     "url": "https://github.com/bakhod1r/awesome-agents"

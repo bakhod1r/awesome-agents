@@ -1,7 +1,7 @@
 {
   "name": "release-team",
   "description": "Release & Reliability Team \u2014 5 specialist agents. Deliver change safely and keep production healthy against explicit SLOs and error budgets.",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "author": {
     "name": "bakhod1r",
     "url": "https://github.com/bakhod1r/awesome-agents"
