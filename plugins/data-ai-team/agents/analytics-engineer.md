@@ -1,7 +1,7 @@
 ---
 name: analytics-engineer
 description: Turn raw tables into a tested, documented metric layer the business can trust. Invoke for data-ai-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

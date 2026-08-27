@@ -1,7 +1,7 @@
 ---
 name: web-ux-quality-engineer
 description: Verify web experience quality: usability, responsiveness, performance, and polish. Invoke for frontend-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

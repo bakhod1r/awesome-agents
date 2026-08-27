@@ -1,7 +1,7 @@
 ---
 name: frontend-engineer
 description: Build accessible, performant interfaces that hold up on slow networks and real devices. Invoke for frontend-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

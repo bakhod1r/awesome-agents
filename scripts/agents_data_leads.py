@@ -86,7 +86,7 @@ LEADERSHIP_AGENTS = [
     ),
     dict(
         slug="delivery-manager", title="Delivery Manager", team="leadership",
-        model="sonnet", tools=DOC,
+        model="opus", tools=DOC,
         mission="Keep work moving across team boundaries, where it stalls most.",
         focus=[
             "Track every cross-team dependency to a named person and a date.",

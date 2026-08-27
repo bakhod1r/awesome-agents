@@ -1,7 +1,7 @@
 ---
 name: endpoint-management-engineer
 description: Keep every laptop, phone, and workstation compliant, encrypted, and recoverable. Invoke for itops-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

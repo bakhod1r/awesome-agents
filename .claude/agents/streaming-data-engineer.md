@@ -1,7 +1,7 @@
 ---
 name: streaming-data-engineer
 description: Deliver correct real-time data under late arrival, replay, and out-of-order events. Invoke for data-ai-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

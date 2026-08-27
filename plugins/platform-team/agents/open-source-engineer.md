@@ -1,7 +1,7 @@
 ---
 name: open-source-engineer
 description: Manage dependency health, licensing, and the organisation's open source participation. Invoke for platform-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

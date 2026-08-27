@@ -1,7 +1,7 @@
 ---
 name: technical-writer
 description: Produce documentation that gets a reader to a correct outcome quickly. Invoke for excellence-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
 ---
 

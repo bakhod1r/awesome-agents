@@ -1,7 +1,7 @@
 ---
 name: app-release-engineer
 description: Get mobile builds to users predictably, with staged rollout and a kill switch that works. Invoke for mobile-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

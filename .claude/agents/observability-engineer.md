@@ -1,7 +1,7 @@
 ---
 name: observability-engineer
 description: Build the telemetry platform that makes every production question answerable in minutes. Invoke for platform-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

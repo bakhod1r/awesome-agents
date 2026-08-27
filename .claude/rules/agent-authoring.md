@@ -17,5 +17,5 @@ Responsibilities, Collaboration, Inputs, Outputs, Decision Rules, Quality Bar, O
 
 - `name` is kebab-case and matches the filename.
 - `description` states when to invoke, not just what the agent is.
-- `model`: `opus` for architecture, security, and judgement-heavy roles; `sonnet` otherwise.
+- `model`: `opus` for every agent. These roles are judgement work end to end, and a wrong judgement costs more than the token difference.
 - `tools`: least privilege. Reviewers and architects get read-only.

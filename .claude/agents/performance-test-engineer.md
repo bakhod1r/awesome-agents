@@ -1,7 +1,7 @@
 ---
 name: performance-test-engineer
 description: Prove the system meets latency and throughput targets and find where it breaks. Invoke for quality-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: it-service-desk-engineer
 description: Resolve user-facing IT issues fast and eliminate their causes rather than their symptoms. Invoke for itops-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

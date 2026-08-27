@@ -1,7 +1,7 @@
 ---
 name: reliability-test-engineer
 description: Verify the system degrades gracefully and recovers under failure. Invoke for quality-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

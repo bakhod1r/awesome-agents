@@ -1,7 +1,7 @@
 ---
 name: mobile-engineer
 description: Build mobile features that are fast, offline-tolerant, and crash-free. Invoke for mobile-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

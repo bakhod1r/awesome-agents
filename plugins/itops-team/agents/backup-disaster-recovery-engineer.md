@@ -1,7 +1,7 @@
 ---
 name: backup-disaster-recovery-engineer
 description: Guarantee the organisation can come back from data loss, ransomware, or site failure. Invoke for itops-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

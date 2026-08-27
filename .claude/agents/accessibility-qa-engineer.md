@@ -1,7 +1,7 @@
 ---
 name: accessibility-qa-engineer
 description: Ensure products are usable by people with disabilities and meet WCAG 2.2 AA. Invoke for quality-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

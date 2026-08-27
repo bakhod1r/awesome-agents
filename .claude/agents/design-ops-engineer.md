@@ -1,7 +1,7 @@
 ---
 name: design-ops-engineer
 description: Keep the design system and the codebase telling the same story, and make the handoff mechanical. Invoke for design-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

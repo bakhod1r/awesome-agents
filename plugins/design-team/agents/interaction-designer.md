@@ -1,7 +1,7 @@
 ---
 name: interaction-designer
 description: Specify how a flow behaves across every state, transition, and failure. Invoke for design-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
 ---
 

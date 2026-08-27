@@ -1,7 +1,7 @@
 ---
 name: workflow-automation-engineer
 description: Automate business processes end to end with reliable, observable, recoverable workflows. Invoke for entapps-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

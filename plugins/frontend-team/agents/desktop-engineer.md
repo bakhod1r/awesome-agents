@@ -1,7 +1,7 @@
 ---
 name: desktop-engineer
 description: Ship desktop applications that integrate with the operating system and update themselves safely. Invoke for frontend-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

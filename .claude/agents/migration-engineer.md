@@ -1,7 +1,7 @@
 ---
 name: migration-engineer
 description: Move systems and data between platforms without downtime or loss. Invoke for backend-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

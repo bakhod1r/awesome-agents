@@ -1,7 +1,7 @@
 ---
 name: it-policy-engineer
 description: Write policy people can follow and machines can enforce, then retire the policy that no longer applies. Invoke for grc-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
 ---
 

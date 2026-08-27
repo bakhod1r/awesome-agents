@@ -1,7 +1,7 @@
 ---
 name: android-engineer
 description: Build Android features that behave correctly across a fragmented device, OEM, and version matrix. Invoke for mobile-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

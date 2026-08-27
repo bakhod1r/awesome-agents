@@ -1,7 +1,7 @@
 ---
 name: delivery-manager
 description: Keep work moving across team boundaries, where it stalls most. Invoke for leadership-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
 ---
 

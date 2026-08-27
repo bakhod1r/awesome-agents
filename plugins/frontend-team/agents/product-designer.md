@@ -1,7 +1,7 @@
 ---
 name: product-designer
 description: Design flows that solve the user problem with the least interface possible. Invoke for frontend-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
 ---
 

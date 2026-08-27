@@ -290,7 +290,7 @@ python3 scripts/generate.py   # regenerates .claude/ from scripts/agents_data.py
 <pre><code># scripts/agents_data.py
 dict(
     slug="graph-database-engineer", title="Graph Database Engineer", team="backend",
-    model="sonnet", tools=FULL,
+    model="opus", tools=FULL,
     mission="Design and operate graph stores for traversal-heavy workloads.",
     focus=[...],      # 5 responsibilities
     inputs=[...], outputs=[...],

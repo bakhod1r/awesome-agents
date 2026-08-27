@@ -1,7 +1,7 @@
 ---
 name: event-streaming-engineer
 description: Move events between services exactly as often as the business requires, and prove it. Invoke for backend-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: engineering-standards-engineer
 description: Turn engineering standards into automated defaults rather than documents nobody reads. Invoke for excellence-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

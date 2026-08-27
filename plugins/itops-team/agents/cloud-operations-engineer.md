@@ -1,7 +1,7 @@
 ---
 name: cloud-operations-engineer
 description: Operate cloud estates safely: accounts, quotas, guardrails, and day-two operations. Invoke for itops-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: ml-platform-engineer
 description: Provide the compute, storage, and tooling that lets ML teams move without touching infrastructure. Invoke for mlops-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

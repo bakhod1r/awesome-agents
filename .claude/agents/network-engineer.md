@@ -1,7 +1,7 @@
 ---
 name: network-engineer
 description: Design and operate networks that are fast, segmented, observable, and recoverable. Invoke for itops-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

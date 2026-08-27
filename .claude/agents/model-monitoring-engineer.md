@@ -1,7 +1,7 @@
 ---
 name: model-monitoring-engineer
 description: Detect model degradation in production before users or the business feel it. Invoke for mlops-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

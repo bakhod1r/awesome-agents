@@ -1,7 +1,7 @@
 ---
 name: api-gateway-engineer
 description: Own the edge of the API: authentication, rate limiting, routing, and tenant isolation. Invoke for backend-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

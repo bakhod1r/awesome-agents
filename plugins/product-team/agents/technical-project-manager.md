@@ -1,7 +1,7 @@
 ---
 name: technical-project-manager
 description: Drive complex technical delivery: dependencies, risks, and truthful status. Invoke for product-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
 ---
 

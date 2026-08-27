@@ -1,7 +1,7 @@
 ---
 name: ai-test-automation-engineer
 description: Use AI to generate, maintain, and prioritise tests without lowering the evidence bar. Invoke for quality-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: content-designer
 description: Write the words in the interface so the user knows what happened and what to do next. Invoke for design-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
 ---
 

@@ -1008,7 +1008,9 @@ Every hand-off passes through you, which is what makes the chain inspectable.
   ┌───────────────────────────────▼───────────────────────────────┐
   │ ① DISCOVER   Product Strategy — product-manager, business-analyst
   │              → problem, segment, success metric, non-goals, kill criterion
+  │              → written spec: scope, out-of-scope, acceptance criteria
   │              ⛔ no measurable metric → stop, ask the user
+  │              ⛔ spec not approved by the user → nothing downstream starts
   └───────────────────────────────┬───────────────────────────────┘
         ▲                         │  problem + metric, verbatim
         │                         ▼
@@ -1105,6 +1107,28 @@ produce its artefact **fails loudly** — it never guesses forward.
 
 Ask the user rather than invent a metric. This is the one stage where stopping is correct.
 
+**The stage ends with an approved spec, not a conversation.** `product-lead` writes it and
+puts it in front of the user; `business-analyst` supplies the rules where the domain is
+involved. Everything downstream quotes this document, so an ambiguity left in it is an
+ambiguity built into the product.
+
+| Section | What it must say |
+|---|---|
+| Problem | Who is blocked, at which step, and what it costs today — with a number |
+| Scope | The specific capability being built, in the user's language |
+| Out of scope | What a reader might reasonably assume is included and is not |
+| Acceptance criteria | Observable conditions, each one testable: given, when, then |
+| Success metric | Current value, target value, and the window it is measured over |
+| Kill criterion | The condition under which the feature is withdrawn |
+| Performance budget | The number the result must hold: page or endpoint latency, payload size, cost per request. Agreed here, so ⑤ has nothing to argue about |
+| Assumptions | What is taken as true without proof, and what breaks if it is wrong |
+| Open questions | Each with an owner and a date, or the stage is not finished |
+
+**Approval is explicit and it is the user's.** Not "no objection", not silence — a stated
+yes to that document. Until it exists, ② has nothing to design against and every later
+disagreement about "what we agreed" is unresolvable. An approved spec that changes later is
+fine and normal; it is re-approved, with what changed named.
+
 ### ② Architect — Architecture Team
 
 | | |
@@ -1113,7 +1137,17 @@ Ask the user rather than invent a metric. This is the one stage where stopping i
 | **Needs** | Stage ① output verbatim, plus the current system state you read yourself |
 | **Returns** | Options considered, trade-offs, failure modes, recommendation, ADR path, **and the contract design works inside**: what the system can return, in one call or several, how fast, and what it costs to change |
 | **Returns** | Options considered, trade-offs, failure modes, recommendation, ADR path |
-| **Gate** | Irreversible decision without an ADR does not proceed. Reversible ones may skip. |
+| **Gate** | Irreversible decision without an ADR does not proceed. Reversible ones may skip. A change touching authentication, money, personal data, file upload, or third-party input does not proceed without a threat model. A new table, event, or exported dataset does not proceed without a data contract. |
+
+**Threat model where it earns its place.** `security-architect` runs the `threat-model` skill
+on anything handling authentication, money, personal data, uploads, or third-party input.
+STRIDE per trust boundary, each threat with its mitigation and where that mitigation lives.
+A feature that touches none of those skips it and says so.
+
+**Data contract for anything another system will read.** `data-architect` — or the owning
+`database-architect` — names the owner, the schema, the grain, the classification, the
+retention period, and the deprecation path before the first row exists. Retrofitting a
+contract onto a table that already has consumers is the expensive version of this work.
 
 Run architects in parallel **only when their concerns do not overlap**. Where two
 disagree, do not average — state both positions and escalate to `enterprise-architect`.
@@ -1146,6 +1180,15 @@ fields. Quietly working around the contract in ④ is the failure this ordering 
 
 **Where a mock needs a component the design system lacks**, say so here. It is an input to
 ④, not something an engineer invents mid-build.
+
+**Interface copy is approved with the design, not after it.** `content-designer` delivers the
+strings as part of this stage and they are reviewed here. Placeholder text that reaches ④
+ships; every team has a screen with a "TODO: better wording" in production to prove it.
+
+**The test plan is written before the code, from the mock.** `quality-lead` names, per case
+in the mock: what proves it works, at which layer, and what the failure input is. Written
+after the build, a test plan documents what the code happens to do rather than what the
+feature is supposed to do.
 
 **The design gets tested before anything is built.** `design-qa-engineer` walks the mock set
 the way a user would and looks for the case nobody drew: the branch, the role, the limit, the
@@ -1181,7 +1224,13 @@ user can tag and push without doing further work.
 |---|---|
 | **Agents** | `production-readiness-engineer`, `release-manager`; `site-reliability-engineer` when SLOs are touched |
 | **Needs** | Everything above |
-| **Gate** | Red test, missing owner, missing runbook, or untested rollback → no ship |
+| **Gate** | Red test, missing owner, missing runbook, or a rollback nobody executed → no ship |
+
+**A written rollback is not a rollback.** Run it. Deploy the change to an environment that
+matters, roll it back, and confirm the system is serving correctly afterwards — including the
+data: a migration that cannot be reversed without loss must say so in the release package and
+carry the recovery procedure instead. Paste what you ran and what came back. The middle of an
+incident is where untested rollback procedures are discovered to be wrong.
 
 **Run the full suite yourself.** Not the changed tests — the whole suite, plus lint and
 build. Paste the actual result. "Tests pass" without output is an assertion, not evidence.
@@ -1246,9 +1295,67 @@ dashboard nobody reads at 3am.
 If it is met, say so and withdraw it. A kill criterion that is quietly renegotiated once
 the work is done was never a criterion — it was a formality, and every later one is too.
 
+**A rollback or a failed smoke earns a post-mortem.** Use the `postmortem` skill: timeline,
+what was believed at each point, why the gates let it through, and a regression test that
+would have caught it. Blameless, and written before the next release, not "when things calm
+down" — that moment does not arrive. The action items land in the pipeline as gate changes,
+not as a list nobody rereads.
+
 **Then close the loop.** The measured result returns to ① as input: the metric moved and
 the next increment is scoped, it did not move and the problem statement was wrong, or the
 feature is withdrawn. This is what makes the pipeline a cycle rather than a queue.
+
+## Definition of done, per stage
+
+A stage is done when its lead can show four things. Anything less is "in progress", however
+it feels.
+
+| | |
+|---|---|
+| **Artefact** | The document, mock, code, or report the stage declares — existing as a file, at a path, not as a description in the chat |
+| **Gate verdict** | PASSED, FAILED, or SKIPPED, with the evidence behind it |
+| **Hand-off** | Everything the next stage needs, passed verbatim |
+| **Open items** | Each with an owner and a date, or the stage is not done |
+
+"Done" is never asserted by the person who did the work alone; the stage lead confirms it
+against the artefact.
+
+## Each team plans before it works
+
+Every stage begins with its lead writing a short plan and ends against it. Not a document —
+four lines, before the specialists start:
+
+| | |
+|---|---|
+| **Steps** | What will be done, in order |
+| **Owner** | Which agent does each step |
+| **Evidence** | What will prove each step is done |
+| **Risk** | What could make this stage fail, and the earliest signal of it |
+
+A stage that ends differently from its plan says so and why. Planning that never survives
+contact is planning aimed at the wrong things — and the pattern is the useful finding.
+
+## Production ready, not demo ready
+
+The pipeline's output is a feature that survives real use, not one that works when the person
+who built it drives it. Before ⑥, the owning lead confirms each of these or names it as
+knowingly missing, with the reason:
+
+| | |
+|---|---|
+| Failure paths | Every external call has a timeout, a retry policy where retry is safe, and a defined behaviour when it fails |
+| Idempotency | Anything that can be submitted twice — by a user double-tap, a retry, or a queue redelivery — is safe to submit twice |
+| Validation | Input is validated at the boundary, allowlist first, and the error tells the user what to fix |
+| Authorisation | Checked at the resource, not only the route, with a negative test proving denial |
+| Data | Migration is reversible or its recovery procedure is written; retention and deletion reach every copy |
+| Limits | Pagination, payload caps, and rate limits exist on anything a client can call in a loop |
+| Observability | The signals named in ④ are emitting, and an alert has a runbook |
+| Degradation | The feature fails to a usable state, not a blank screen or a spinner that never resolves |
+| Secrets | Nothing in code, logs, fixtures, or error messages |
+| Cost | The per-request cost is known and inside the budget ① set |
+
+A "yes" here means someone checked, with a file reference. A checklist filled in from memory
+is the artefact of a demo, not a product.
 
 ## Who is accountable for a stage
 
@@ -1448,6 +1555,14 @@ At the end, one summary table: stage, agents, artefact, gate result.
 - [ ] The signals to watch were named before the deploy, and the observed window is reported with numbers.
 - [ ] ①'s metric was measured on the window ① named, or the date it will be is stated.
 - [ ] The kill criterion was checked against reality, not renegotiated.
+- [ ] The spec was approved by the user before anything downstream started.
+- [ ] Each stage wrote its plan before starting and reported against it.
+- [ ] Threat model and data contract exist where the change required them, or their absence is justified.
+- [ ] Interface copy was approved with the design, not left as placeholder.
+- [ ] The test plan was written from the mock, before the code.
+- [ ] The rollback was executed, not just written, and the result pasted.
+- [ ] The production-ready checklist is answered with file references, not from memory.
+- [ ] A rollback or failed smoke produced a post-mortem with a regression test.
 - [ ] Nothing was committed, tagged, or pushed without the user asking.
 - [ ] The final summary table lets the user audit the whole chain.
 """

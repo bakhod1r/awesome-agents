@@ -1,7 +1,7 @@
 ---
 name: web-performance-engineer
 description: Hold Core Web Vitals budgets on real user devices and networks, not lab averages. Invoke for frontend-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

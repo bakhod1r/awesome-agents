@@ -1,7 +1,7 @@
 ---
 name: api-quality-engineer
 description: Guarantee API correctness, compatibility, and resilience at the contract level. Invoke for quality-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: capacity-planning-engineer
 description: Ensure capacity exists when demand arrives, without paying for idle headroom all year. Invoke for finops-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

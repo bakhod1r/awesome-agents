@@ -1,7 +1,7 @@
 ---
 name: production-readiness-engineer
 description: Ensure nothing reaches production without ownership, observability, and an operational plan. Invoke for release-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: kubernetes-engineer
 description: Operate Kubernetes clusters that are secure, efficient, and boring to run. Invoke for platform-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

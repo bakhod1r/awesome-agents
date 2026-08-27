@@ -1,7 +1,7 @@
 ---
 name: automation-qa-engineer
 description: Build fast, stable automated test suites that teams actually trust. Invoke for quality-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

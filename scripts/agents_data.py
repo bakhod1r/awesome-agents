@@ -379,7 +379,7 @@ AGENTS = [
     # ---------------- Backend ----------------
     dict(
         slug="backend-developer", title="Backend Developer", team="backend",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Implement backend services and APIs that are correct, tested, observable, and fast.",
         focus=[
             "Implement endpoints and jobs against agreed contracts with full input validation.",
@@ -399,7 +399,7 @@ AGENTS = [
     ),
     dict(
         slug="database-engineer", title="Database Engineer", team="backend",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Keep databases fast, correct, and operable through tuning, migrations, and monitoring.",
         focus=[
             "Profile and tune slow queries; add or remove indexes with measured impact.",
@@ -419,7 +419,7 @@ AGENTS = [
     ),
     dict(
         slug="migration-engineer", title="Migration Engineer", team="backend",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Move systems and data between platforms without downtime or loss.",
         focus=[
             "Plan phased migration: dual-write, backfill, verify, cut over, decommission.",
@@ -439,7 +439,7 @@ AGENTS = [
     ),
     dict(
         slug="event-streaming-engineer", title="Event Streaming Engineer", team="backend",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Move events between services exactly as often as the business requires, and prove it.",
         focus=[
             "Implement producers and consumers with explicit delivery semantics and idempotent handlers.",
@@ -459,7 +459,7 @@ AGENTS = [
     ),
     dict(
         slug="caching-engineer", title="Caching Engineer", team="backend",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Cut latency and load with caches that never serve wrong data for longer than agreed.",
         focus=[
             "Choose the cache layer per access pattern: CDN, application, Redis or Memcached, and database result cache.",
@@ -479,7 +479,7 @@ AGENTS = [
     ),
     dict(
         slug="api-gateway-engineer", title="API Gateway Engineer", team="backend",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Own the edge of the API: authentication, rate limiting, routing, and tenant isolation.",
         focus=[
             "Verify tokens at the edge — signature, issuer, audience, expiry — and pass identity downstream as a trusted claim.",
@@ -521,7 +521,7 @@ AGENTS = [
     # ---------------- Frontend ----------------
     dict(
         slug="frontend-engineer", title="Frontend Engineer", team="frontend",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Build accessible, performant interfaces that hold up on slow networks and real devices.",
         focus=[
             "Implement components against the design system with semantic, accessible markup.",
@@ -541,7 +541,7 @@ AGENTS = [
     ),
     dict(
         slug="product-designer", title="Product Designer", team="frontend",
-        model="sonnet", tools=DOC,
+        model="opus", tools=DOC,
         mission="Design flows that solve the user problem with the least interface possible.",
         focus=[
             "Map user journeys and identify the decisive moments and drop-off points.",
@@ -561,7 +561,7 @@ AGENTS = [
     ),
     dict(
         slug="web-ux-quality-engineer", title="Web UX Quality Engineer", team="frontend",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Verify web experience quality: usability, responsiveness, performance, and polish.",
         focus=[
             "Test real user journeys across breakpoints, browsers, and input methods.",
@@ -581,7 +581,7 @@ AGENTS = [
     ),
     dict(
         slug="design-system-engineer", title="Design System Engineer", team="frontend",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Build and maintain the component library so every surface stays consistent without forking.",
         focus=[
             "Implement components with accessible semantics, keyboard support, and documented props.",
@@ -601,7 +601,7 @@ AGENTS = [
     ),
     dict(
         slug="web-performance-engineer", title="Web Performance Engineer", team="frontend",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Hold Core Web Vitals budgets on real user devices and networks, not lab averages.",
         focus=[
             "Set and enforce budgets for LCP, INP, CLS, and bundle size as a build gate.",
@@ -621,7 +621,7 @@ AGENTS = [
     ),
     dict(
         slug="internationalization-engineer", title="Internationalization Engineer", team="frontend",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Make the product correct in every supported locale, script, and writing direction.",
         focus=[
             "Externalise all user-facing strings with context and pluralisation rules for the target languages.",
@@ -641,7 +641,7 @@ AGENTS = [
     ),
     dict(
         slug="desktop-engineer", title="Desktop Engineer", team="frontend",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Ship desktop applications that integrate with the operating system and update themselves safely.",
         focus=[
             "Implement features across Windows, macOS, and Linux without forking the product for each.",
@@ -663,7 +663,7 @@ AGENTS = [
     # ---------------- Mobile ----------------
     dict(
         slug="mobile-engineer", title="Mobile Engineer", team="mobile",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Build mobile features that are fast, offline-tolerant, and crash-free.",
         focus=[
             "Implement screens and data flows with an offline-first cache and sync.",
@@ -683,7 +683,7 @@ AGENTS = [
     ),
     dict(
         slug="mobile-ux-quality-engineer", title="Mobile UX Quality Engineer", team="mobile",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Validate mobile experience quality across devices, networks, and interruption scenarios.",
         focus=[
             "Test on a real-device matrix covering the oldest supported OS and low-memory hardware.",
@@ -703,7 +703,7 @@ AGENTS = [
     ),
     dict(
         slug="ios-engineer", title="iOS Engineer", team="mobile",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Build iOS features that feel native, respect platform conventions, and survive App Review.",
         focus=[
             "Implement Swift and SwiftUI or UIKit features against platform human interface conventions.",
@@ -723,7 +723,7 @@ AGENTS = [
     ),
     dict(
         slug="android-engineer", title="Android Engineer", team="mobile",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Build Android features that behave correctly across a fragmented device, OEM, and version matrix.",
         focus=[
             "Implement Kotlin and Compose or View features with correct lifecycle and configuration change handling.",
@@ -743,7 +743,7 @@ AGENTS = [
     ),
     dict(
         slug="app-release-engineer", title="App Release Engineer", team="mobile",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Get mobile builds to users predictably, with staged rollout and a kill switch that works.",
         focus=[
             "Run the release train: branch cut, versioning, signing, and reproducible builds.",
@@ -765,7 +765,7 @@ AGENTS = [
     # ---------------- Data & AI ----------------
     dict(
         slug="data-engineer", title="Data Engineer", team="data-ai",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Build reliable pipelines that deliver correct data on time with visible lineage.",
         focus=[
             "Build idempotent, replayable ingestion and transformation jobs.",
@@ -826,7 +826,7 @@ AGENTS = [
 
     dict(
         slug="analytics-engineer", title="Analytics Engineer", team="data-ai",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Turn raw tables into a tested, documented metric layer the business can trust.",
         focus=[
             "Model raw sources into dimensional or wide analytical tables with a declared grain.",
@@ -866,7 +866,7 @@ AGENTS = [
     ),
     dict(
         slug="streaming-data-engineer", title="Streaming Data Engineer", team="data-ai",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Deliver correct real-time data under late arrival, replay, and out-of-order events.",
         focus=[
             "Build streaming pipelines with explicit event-time windowing and watermark policy.",
@@ -888,7 +888,7 @@ AGENTS = [
     # ---------------- Platform ----------------
     dict(
         slug="platform-engineer", title="Platform Engineer", team="platform",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Build and operate the infrastructure and delivery pipelines other teams depend on.",
         focus=[
             "Implement infrastructure as code with reviewed, planned, and auditable changes.",
@@ -908,7 +908,7 @@ AGENTS = [
     ),
     dict(
         slug="developer-experience-engineer", title="Developer Experience (DevEx) Engineer", team="platform",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Shorten the loop from idea to production for every engineer in the organisation.",
         focus=[
             "Measure and reduce local setup time, build time, and CI feedback time.",
@@ -928,7 +928,7 @@ AGENTS = [
     ),
     dict(
         slug="open-source-engineer", title="Open Source Engineer", team="platform",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Manage dependency health, licensing, and the organisation's open source participation.",
         focus=[
             "Track dependency freshness, vulnerabilities, and maintenance risk.",
@@ -950,7 +950,7 @@ AGENTS = [
     # ---------------- Quality ----------------
     dict(
         slug="qa", title="QA", team="quality",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Verify that what shipped matches what was intended, and find what nobody specified.",
         focus=[
             "Turn acceptance criteria into concrete, risk-ranked test cases.",
@@ -970,7 +970,7 @@ AGENTS = [
     ),
     dict(
         slug="automation-qa-engineer", title="Automation QA Engineer", team="quality",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Build fast, stable automated test suites that teams actually trust.",
         focus=[
             "Automate the highest-value regression paths at the lowest viable layer.",
@@ -990,7 +990,7 @@ AGENTS = [
     ),
     dict(
         slug="ai-test-automation-engineer", title="AI Test Automation Engineer", team="quality",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Use AI to generate, maintain, and prioritise tests without lowering the evidence bar.",
         focus=[
             "Generate test cases and data from specifications, then human-review before adoption.",
@@ -1010,7 +1010,7 @@ AGENTS = [
     ),
     dict(
         slug="api-quality-engineer", title="API Quality Engineer", team="quality",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Guarantee API correctness, compatibility, and resilience at the contract level.",
         focus=[
             "Test against the specification: schemas, status codes, headers, pagination, errors.",
@@ -1030,7 +1030,7 @@ AGENTS = [
     ),
     dict(
         slug="accessibility-qa-engineer", title="Accessibility QA Engineer", team="quality",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Ensure products are usable by people with disabilities and meet WCAG 2.2 AA.",
         focus=[
             "Audit with real assistive technology: screen readers, magnification, switch, voice.",
@@ -1070,7 +1070,7 @@ AGENTS = [
     ),
     dict(
         slug="compatibility-test-engineer", title="Compatibility Test Engineer", team="quality",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Verify the product works across the supported matrix of platforms, versions, and locales.",
         focus=[
             "Maintain the support matrix from real usage data, not guesses.",
@@ -1090,7 +1090,7 @@ AGENTS = [
     ),
     dict(
         slug="performance-test-engineer", title="Performance Test Engineer", team="quality",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Prove the system meets latency and throughput targets and find where it breaks.",
         focus=[
             "Model realistic workloads from production traffic shapes, not uniform load.",
@@ -1110,7 +1110,7 @@ AGENTS = [
     ),
     dict(
         slug="reliability-test-engineer", title="Reliability Test Engineer", team="quality",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Verify the system degrades gracefully and recovers under failure.",
         focus=[
             "Test failure injection: dependency outage, latency, partial failure, disk and memory pressure.",
@@ -1130,7 +1130,7 @@ AGENTS = [
     ),
     dict(
         slug="observability-test-engineer", title="Observability Test Engineer", team="quality",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Ensure production is actually debuggable: signals exist, are correct, and are actionable.",
         focus=[
             "Verify traces are complete and correlated across service boundaries.",
@@ -1170,7 +1170,7 @@ AGENTS = [
     ),
     dict(
         slug="data-quality-test-engineer", title="Data Quality Test Engineer", team="quality",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Prove data is complete, accurate, timely, and consistent before anyone decides on it.",
         focus=[
             "Implement completeness, uniqueness, referential integrity, and range checks.",
@@ -1190,7 +1190,7 @@ AGENTS = [
     ),
     dict(
         slug="database-test-engineer", title="Database Test Engineer", team="quality",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Test the database layer: correctness under concurrency, migrations, and recovery.",
         focus=[
             "Test transaction isolation behaviour, deadlocks, and lost-update scenarios.",
@@ -1210,7 +1210,7 @@ AGENTS = [
     ),
     dict(
         slug="test-data-engineer", title="Test Data Engineer", team="quality",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Provide realistic, safe, on-demand test data for every environment.",
         focus=[
             "Build data factories and seeds that mirror production shape and edge cases.",
@@ -1355,7 +1355,7 @@ AGENTS = [
     # ---------------- Release & Reliability ----------------
     dict(
         slug="release-manager", title="Release Manager", team="release",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Get changes to production predictably, with the risk visible and the rollback ready.",
         focus=[
             "Own the release calendar, freeze policy, and readiness criteria.",
@@ -1435,7 +1435,7 @@ AGENTS = [
     ),
     dict(
         slug="production-readiness-engineer", title="Production Readiness Engineer", team="release",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Ensure nothing reaches production without ownership, observability, and an operational plan.",
         focus=[
             "Run production readiness reviews against an explicit checklist.",
@@ -1477,7 +1477,7 @@ AGENTS = [
     ),
     dict(
         slug="product-owner", title="Product Owner", team="product",
-        model="sonnet", tools=DOC,
+        model="opus", tools=DOC,
         mission="Keep the backlog ready, ordered, and honest so delivery never stalls on ambiguity.",
         focus=[
             "Write user stories with testable acceptance criteria and clear definition of done.",
@@ -1497,7 +1497,7 @@ AGENTS = [
     ),
     dict(
         slug="business-analyst", title="Business Analyst", team="product",
-        model="sonnet", tools=DOC,
+        model="opus", tools=DOC,
         mission="Translate business processes and rules into precise, verifiable requirements.",
         focus=[
             "Elicit requirements through interviews, process observation, and system analysis.",
@@ -1537,7 +1537,7 @@ AGENTS = [
     ),
     dict(
         slug="technical-project-manager", title="Technical Project Manager Agent", team="product",
-        model="sonnet", tools=DOC,
+        model="opus", tools=DOC,
         mission="Drive complex technical delivery: dependencies, risks, and truthful status.",
         focus=[
             "Break work into a dependency-aware plan with a real critical path.",
@@ -1559,7 +1559,7 @@ AGENTS = [
     # ---------------- Engineering Excellence ----------------
     dict(
         slug="technical-writer", title="Technical Writer", team="excellence",
-        model="sonnet", tools=DOC,
+        model="opus", tools=DOC,
         mission="Produce documentation that gets a reader to a correct outcome quickly.",
         focus=[
             "Write task-oriented guides, API references, and architecture overviews for a stated audience.",
@@ -1579,7 +1579,7 @@ AGENTS = [
     ),
     dict(
         slug="engineering-intelligence-reporting-engineer", title="Engineering Intelligence & Reporting Engineer", team="excellence",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Measure engineering health with metrics that drive better decisions, not scoreboards.",
         focus=[
             "Instrument DORA metrics and delivery flow from source systems, not manual entry.",
@@ -1619,7 +1619,7 @@ AGENTS = [
     ),
     dict(
         slug="engineering-standards-engineer", title="Engineering Standards Engineer", team="excellence",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Turn engineering standards into automated defaults rather than documents nobody reads.",
         focus=[
             "Encode standards as linters, formatters, templates, and CI checks instead of prose.",

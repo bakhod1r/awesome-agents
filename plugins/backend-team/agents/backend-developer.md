@@ -1,7 +1,7 @@
 ---
 name: backend-developer
 description: Implement backend services and APIs that are correct, tested, observable, and fast. Invoke for backend-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

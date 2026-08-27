@@ -1,7 +1,7 @@
 ---
 name: product-owner
 description: Keep the backlog ready, ordered, and honest so delivery never stalls on ambiguity. Invoke for product-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
 ---
 

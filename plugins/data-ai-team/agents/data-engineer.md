@@ -1,7 +1,7 @@
 ---
 name: data-engineer
 description: Build reliable pipelines that deliver correct data on time with visible lineage. Invoke for data-ai-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

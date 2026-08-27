@@ -1,7 +1,7 @@
 ---
 name: business-analyst
 description: Translate business processes and rules into precise, verifiable requirements. Invoke for product-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
 ---
 

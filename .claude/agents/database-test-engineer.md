@@ -1,7 +1,7 @@
 ---
 name: database-test-engineer
 description: Test the database layer: correctness under concurrency, migrations, and recovery. Invoke for quality-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

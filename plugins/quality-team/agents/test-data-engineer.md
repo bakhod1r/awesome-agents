@@ -1,7 +1,7 @@
 ---
 name: test-data-engineer
 description: Provide realistic, safe, on-demand test data for every environment. Invoke for quality-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: virtualization-engineer
 description: Run hypervisor and virtual desktop platforms with predictable performance and clean capacity headroom. Invoke for itops-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

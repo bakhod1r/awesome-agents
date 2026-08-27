@@ -1,7 +1,7 @@
 ---
 name: audit-engineer
 description: Make audits routine by generating control evidence continuously from the systems themselves. Invoke for grc-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

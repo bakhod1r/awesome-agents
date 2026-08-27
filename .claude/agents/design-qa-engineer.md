@@ -1,7 +1,7 @@
 ---
 name: design-qa-engineer
 description: Test the design itself before anyone builds it, then test the build against the design. Invoke for design-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

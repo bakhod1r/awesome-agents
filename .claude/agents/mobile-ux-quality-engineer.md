@@ -1,7 +1,7 @@
 ---
 name: mobile-ux-quality-engineer
 description: Validate mobile experience quality across devices, networks, and interruption scenarios. Invoke for mobile-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

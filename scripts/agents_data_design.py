@@ -68,7 +68,7 @@ DESIGN_AGENTS = [
     ),
     dict(
         slug="interaction-designer", title="Interaction Designer", team="design",
-        model="sonnet", tools=DOC,
+        model="opus", tools=DOC,
         mission="Specify how a flow behaves across every state, transition, and failure.",
         focus=[
             "Map the flow end to end and cut a step before adding a screen.",
@@ -88,7 +88,7 @@ DESIGN_AGENTS = [
     ),
     dict(
         slug="content-designer", title="Content Designer", team="design",
-        model="sonnet", tools=DOC,
+        model="opus", tools=DOC,
         mission="Write the words in the interface so the user knows what happened and what to do next.",
         focus=[
             "Write labels, empty states, and errors that name the cause and the next action.",
@@ -108,7 +108,7 @@ DESIGN_AGENTS = [
     ),
     dict(
         slug="design-qa-engineer", title="Design QA Engineer", team="design",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Test the design itself before anyone builds it, then test the build against the design.",
         focus=[
             "Review the mock set for missing cases: unreached states, undrawn branches, roles, limits, and worst-case content.",
@@ -128,7 +128,7 @@ DESIGN_AGENTS = [
     ),
     dict(
         slug="design-ops-engineer", title="Design Ops Engineer", team="design",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Keep the design system and the codebase telling the same story, and make the handoff mechanical.",
         focus=[
             "Keep tokens the single source of truth and generate the code side from them.",

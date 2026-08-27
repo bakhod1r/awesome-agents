@@ -1,7 +1,7 @@
 ---
 name: erp-engineer
 description: Configure and extend the ERP so business processes run correctly and the upgrade path stays open. Invoke for entapps-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

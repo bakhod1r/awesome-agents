@@ -31,7 +31,7 @@ dict(
     slug="graph-database-engineer",          # kebab-case, unique
     title="Graph Database Engineer",
     team="backend",                          # must exist in TEAMS
-    model="sonnet",                          # opus for architecture/security/judgement
+    model="opus",                            # every agent runs on opus
     tools=FULL,                              # FULL | RO | DOC — least privilege
     mission="Design and operate graph stores for traversal-heavy workloads.",
     focus=[...],    # >=3 responsibilities

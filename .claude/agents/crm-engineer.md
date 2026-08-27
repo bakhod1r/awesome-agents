@@ -1,7 +1,7 @@
 ---
 name: crm-engineer
 description: Make the CRM a trustworthy system of record for customer relationships and revenue process. Invoke for entapps-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

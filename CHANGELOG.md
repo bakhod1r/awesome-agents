@@ -11,6 +11,42 @@ For this repository the semantics are:
 - **minor** — new agents, teams, skills, commands, or rules. Additive; nothing breaks.
 - **patch** — content corrections, tooling fixes, site fixes.
 
+## [1.5.0] - 2026-08-27
+
+### Added
+
+**The spec is approved before anything downstream starts.** Stage ① now ends with a written
+spec — problem with a number, scope, out-of-scope, testable acceptance criteria, metric with
+its window, kill criterion, assumptions, open questions with owners, and a performance budget
+— and an explicit yes from the user. Silence is not approval. A spec that changes later is
+re-approved with the change named.
+
+**Gates for the work that is expensive to retrofit.** A threat model on anything touching
+authentication, money, personal data, uploads, or third-party input; a data contract before
+the first row of any new table, event, or exported dataset; interface copy approved with the
+design rather than shipped as placeholder; a test plan written from the mock before the code;
+observability signals named before deploy; a rollback that was actually executed rather than
+written; and a post-mortem with a regression test whenever a smoke fails or a rollback runs.
+
+**Definition of done, per stage.** Artefact at a path, gate verdict with evidence, hand-off
+passed verbatim, and every open item owned and dated. Confirmed by the stage lead, never
+asserted by the author alone.
+
+**Each team plans before it works.** Four lines from the lead before the specialists start —
+steps, owner per step, evidence per step, and the risk with its earliest signal — and the
+stage reports against that plan.
+
+**Production ready, not demo ready.** A ten-point confirmation before release covering failure
+paths, idempotency, validation, authorisation at the resource, reversible data changes,
+limits, live observability, graceful degradation, secrets, and per-request cost against the
+budget. Answered with file references; a checklist filled in from memory is the artefact of a
+demo.
+
+### Changed
+
+**Every agent runs on `opus`.** These roles are judgement work end to end and a wrong judgement
+costs more than the token difference. The authoring rule changed with it.
+
 ## [1.4.0] - 2026-08-27
 
 ### Added

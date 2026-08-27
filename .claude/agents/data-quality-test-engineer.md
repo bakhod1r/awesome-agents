@@ -1,7 +1,7 @@
 ---
 name: data-quality-test-engineer
 description: Prove data is complete, accurate, timely, and consistent before anyone decides on it. Invoke for quality-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

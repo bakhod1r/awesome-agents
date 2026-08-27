@@ -1,7 +1,7 @@
 ---
 name: database-engineer
 description: Keep databases fast, correct, and operable through tuning, migrations, and monitoring. Invoke for backend-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

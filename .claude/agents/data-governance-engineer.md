@@ -1,7 +1,7 @@
 ---
 name: data-governance-engineer
 description: Make data trustworthy, findable, classified, and correctly permissioned across the organisation. Invoke for grc-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

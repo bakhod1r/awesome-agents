@@ -1,7 +1,7 @@
 ---
 name: caching-engineer
 description: Cut latency and load with caches that never serve wrong data for longer than agreed. Invoke for backend-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

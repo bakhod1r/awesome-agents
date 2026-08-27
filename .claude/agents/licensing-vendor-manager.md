@@ -1,7 +1,7 @@
 ---
 name: licensing-vendor-manager
 description: Keep software licensing compliant and vendor spend justified by actual use. Invoke for finops-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: systems-administrator
 description: Keep servers and operating systems healthy, patched, hardened, and inventoried. Invoke for itops-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

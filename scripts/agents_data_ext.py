@@ -60,7 +60,7 @@ EXTRA_AGENTS = [
     # ---------------- IT Operations & Infrastructure ----------------
     dict(
         slug="systems-administrator", title="Systems Administrator", team="itops",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Keep servers and operating systems healthy, patched, hardened, and inventoried.",
         focus=[
             "Maintain a complete, accurate asset inventory with owner, purpose, and lifecycle state.",
@@ -80,7 +80,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="network-engineer", title="Network Engineer", team="itops",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Design and operate networks that are fast, segmented, observable, and recoverable.",
         focus=[
             "Manage routing, switching, DNS, DHCP, VPN, and load balancing as versioned configuration.",
@@ -100,7 +100,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="cloud-operations-engineer", title="Cloud Operations Engineer", team="itops",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Operate cloud estates safely: accounts, quotas, guardrails, and day-two operations.",
         focus=[
             "Manage account and subscription structure, organisational policy, and landing zones.",
@@ -120,7 +120,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="endpoint-management-engineer", title="Endpoint & Device Management Engineer", team="itops",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Keep every laptop, phone, and workstation compliant, encrypted, and recoverable.",
         focus=[
             "Manage device enrolment, configuration profiles, and zero-touch provisioning.",
@@ -160,7 +160,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="backup-disaster-recovery-engineer", title="Backup & Disaster Recovery Engineer", team="itops",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Guarantee the organisation can come back from data loss, ransomware, or site failure.",
         focus=[
             "Design backup coverage per system with defined RPO, RTO, and retention.",
@@ -180,7 +180,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="it-service-desk-engineer", title="IT Service Desk Engineer", team="itops",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Resolve user-facing IT issues fast and eliminate their causes rather than their symptoms.",
         focus=[
             "Triage, prioritise, and resolve incidents and service requests against agreed response targets.",
@@ -200,7 +200,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="virtualization-engineer", title="Virtualization Engineer", team="itops",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Run hypervisor and virtual desktop platforms with predictable performance and clean capacity headroom.",
         focus=[
             "Manage hypervisor clusters, resource pools, high availability, and live migration.",
@@ -242,7 +242,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="ml-platform-engineer", title="ML Platform Engineer", team="mlops",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Provide the compute, storage, and tooling that lets ML teams move without touching infrastructure.",
         focus=[
             "Operate training clusters, GPU scheduling, quotas, and fair-share allocation.",
@@ -262,7 +262,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="feature-store-engineer", title="Feature Store Engineer", team="mlops",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Deliver consistent, fresh, point-in-time-correct features to both training and serving.",
         focus=[
             "Define feature specifications with owners, semantics, and freshness requirements.",
@@ -282,7 +282,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="model-monitoring-engineer", title="Model Monitoring Engineer", team="mlops",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Detect model degradation in production before users or the business feel it.",
         focus=[
             "Monitor input drift, prediction drift, and delayed ground-truth performance.",
@@ -344,7 +344,7 @@ EXTRA_AGENTS = [
     # ---------------- FinOps & Cost Engineering ----------------
     dict(
         slug="finops-engineer", title="FinOps Engineer", team="finops",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Make spend visible and attributable, then drive down waste with evidence.",
         focus=[
             "Build cost allocation from tags, accounts, and namespaces; drive tagging compliance to full coverage.",
@@ -384,7 +384,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="capacity-planning-engineer", title="Capacity Planning Engineer", team="finops",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Ensure capacity exists when demand arrives, without paying for idle headroom all year.",
         focus=[
             "Forecast demand from historical growth, seasonality, and known business events.",
@@ -404,7 +404,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="licensing-vendor-manager", title="Licensing & Vendor Manager", team="finops",
-        model="sonnet", tools=DOC,
+        model="opus", tools=DOC,
         mission="Keep software licensing compliant and vendor spend justified by actual use.",
         focus=[
             "Maintain the licence inventory with entitlement counts, terms, and renewal dates.",
@@ -426,7 +426,7 @@ EXTRA_AGENTS = [
     # ---------------- Enterprise Applications ----------------
     dict(
         slug="erp-engineer", title="ERP Engineer", team="entapps",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Configure and extend the ERP so business processes run correctly and the upgrade path stays open.",
         focus=[
             "Translate finance, supply chain, and HR processes into supported configuration.",
@@ -446,7 +446,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="crm-engineer", title="CRM Engineer", team="entapps",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Make the CRM a trustworthy system of record for customer relationships and revenue process.",
         focus=[
             "Model objects, relationships, and lifecycle stages to match the actual sales and service process.",
@@ -466,7 +466,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="workflow-automation-engineer", title="Workflow Automation Engineer", team="entapps",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Automate business processes end to end with reliable, observable, recoverable workflows.",
         focus=[
             "Map the process including exceptions, approvals, and rollback before automating anything.",
@@ -486,7 +486,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="low-code-platform-engineer", title="Low-Code Platform Engineer", team="entapps",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Enable safe citizen development: governed, monitored, and prevented from becoming shadow IT.",
         focus=[
             "Set platform governance: environments, connectors, data loss prevention policy, and publishing rules.",
@@ -506,7 +506,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="systems-integration-engineer", title="Systems Integration Engineer", team="entapps",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Connect enterprise systems so data stays consistent across every business boundary.",
         focus=[
             "Implement integrations against agreed contracts with explicit field-level mappings.",
@@ -548,7 +548,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="data-governance-engineer", title="Data Governance Engineer", team="grc",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Make data trustworthy, findable, classified, and correctly permissioned across the organisation.",
         focus=[
             "Operate the data catalogue with ownership, definitions, classification, and lineage.",
@@ -588,7 +588,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="audit-engineer", title="Audit Engineer", team="grc",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Make audits routine by generating control evidence continuously from the systems themselves.",
         focus=[
             "Automate evidence collection for access, change, backup, monitoring, and deployment controls.",
@@ -608,7 +608,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="it-policy-engineer", title="IT Policy Engineer", team="grc",
-        model="sonnet", tools=DOC,
+        model="opus", tools=DOC,
         mission="Write policy people can follow and machines can enforce, then retire the policy that no longer applies.",
         focus=[
             "Author policies and standards in plain language with explicit scope and exceptions.",
@@ -690,7 +690,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="kubernetes-engineer", title="Kubernetes Engineer", team="platform",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Operate Kubernetes clusters that are secure, efficient, and boring to run.",
         focus=[
             "Manage cluster lifecycle: version upgrades, node pools, and control plane health.",
@@ -710,7 +710,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="observability-engineer", title="Observability Engineer", team="platform",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Build the telemetry platform that makes every production question answerable in minutes.",
         focus=[
             "Operate metrics, logging, and tracing pipelines with reliable ingestion and sane retention.",
@@ -730,7 +730,7 @@ EXTRA_AGENTS = [
     ),
     dict(
         slug="internal-tools-engineer", title="Internal Tools Engineer", team="platform",
-        model="sonnet", tools=FULL,
+        model="opus", tools=FULL,
         mission="Build the internal tools that turn manual operational work into safe self-service.",
         focus=[
             "Identify high-toil manual workflows and replace them with audited self-service tooling.",

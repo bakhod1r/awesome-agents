@@ -1,7 +1,7 @@
 ---
 name: platform-engineer
 description: Build and operate the infrastructure and delivery pipelines other teams depend on. Invoke for platform-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

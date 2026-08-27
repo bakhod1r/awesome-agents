@@ -1,7 +1,7 @@
 ---
 name: compatibility-test-engineer
 description: Verify the product works across the supported matrix of platforms, versions, and locales. Invoke for quality-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

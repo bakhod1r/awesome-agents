@@ -26,116 +26,116 @@
 | AI Architect | `ai-architect` | Architecture Team | opus |
 | AI Engineer | `ai-engineer` | Data & AI Engineering Team | opus |
 | AI Evaluation Engineer | `ai-evaluation-engineer` | Data & AI Engineering Team | opus |
-| AI Test Automation Engineer | `ai-test-automation-engineer` | Quality Engineering Team | sonnet |
-| API Gateway Engineer | `api-gateway-engineer` | Backend Engineering Team | sonnet |
-| API Quality Engineer | `api-quality-engineer` | Quality Engineering Team | sonnet |
-| Accessibility QA Engineer | `accessibility-qa-engineer` | Quality Engineering Team | sonnet |
-| Analytics Engineer | `analytics-engineer` | Data & AI Engineering Team | sonnet |
-| Android Engineer | `android-engineer` | Mobile Engineering Team | sonnet |
-| App Release Engineer | `app-release-engineer` | Mobile Engineering Team | sonnet |
+| AI Test Automation Engineer | `ai-test-automation-engineer` | Quality Engineering Team | opus |
+| API Gateway Engineer | `api-gateway-engineer` | Backend Engineering Team | opus |
+| API Quality Engineer | `api-quality-engineer` | Quality Engineering Team | opus |
+| Accessibility QA Engineer | `accessibility-qa-engineer` | Quality Engineering Team | opus |
+| Analytics Engineer | `analytics-engineer` | Data & AI Engineering Team | opus |
+| Android Engineer | `android-engineer` | Mobile Engineering Team | opus |
+| App Release Engineer | `app-release-engineer` | Mobile Engineering Team | opus |
 | Application Security Engineer | `application-security-engineer` | Security Engineering Team | opus |
 | Architecture Lead | `architecture-lead` | Architecture Team | opus |
-| Audit Engineer | `audit-engineer` | Governance, Risk & Privacy Team | sonnet |
-| Automation QA Engineer | `automation-qa-engineer` | Quality Engineering Team | sonnet |
+| Audit Engineer | `audit-engineer` | Governance, Risk & Privacy Team | opus |
+| Automation QA Engineer | `automation-qa-engineer` | Quality Engineering Team | opus |
 | Backend Architect | `backend-architect` | Architecture Team | opus |
-| Backend Developer | `backend-developer` | Backend Engineering Team | sonnet |
+| Backend Developer | `backend-developer` | Backend Engineering Team | opus |
 | Backend Engineering Lead | `backend-lead` | Backend Engineering Team | opus |
-| Backup & Disaster Recovery Engineer | `backup-disaster-recovery-engineer` | IT Operations & Infrastructure Team | sonnet |
+| Backup & Disaster Recovery Engineer | `backup-disaster-recovery-engineer` | IT Operations & Infrastructure Team | opus |
 | Bug Hunter and Exploratory Testing Engineer | `bug-hunter-exploratory-testing-engineer` | Quality Engineering Team | opus |
-| Business Analyst | `business-analyst` | Product Strategy Team | sonnet |
-| CRM Engineer | `crm-engineer` | Enterprise Applications Team | sonnet |
-| Caching Engineer | `caching-engineer` | Backend Engineering Team | sonnet |
-| Capacity Planning Engineer | `capacity-planning-engineer` | FinOps & Cost Engineering Team | sonnet |
+| Business Analyst | `business-analyst` | Product Strategy Team | opus |
+| CRM Engineer | `crm-engineer` | Enterprise Applications Team | opus |
+| Caching Engineer | `caching-engineer` | Backend Engineering Team | opus |
+| Capacity Planning Engineer | `capacity-planning-engineer` | FinOps & Cost Engineering Team | opus |
 | Chaos Engineering Engineer | `chaos-engineering-engineer` | Release & Reliability Team | opus |
 | Cloud Cost Architect | `cloud-cost-architect` | FinOps & Cost Engineering Team | opus |
-| Cloud Operations Engineer | `cloud-operations-engineer` | IT Operations & Infrastructure Team | sonnet |
+| Cloud Operations Engineer | `cloud-operations-engineer` | IT Operations & Infrastructure Team | opus |
 | Cloud Security Engineer | `cloud-security-engineer` | Security Engineering Team | opus |
 | Code Reviewer | `code-reviewer` | Quality Engineering Team | opus |
-| Compatibility Test Engineer | `compatibility-test-engineer` | Quality Engineering Team | sonnet |
+| Compatibility Test Engineer | `compatibility-test-engineer` | Quality Engineering Team | opus |
 | Compliance Engineer | `compliance-engineer` | Security Engineering Team | opus |
-| Content Designer | `content-designer` | Design Team | sonnet |
+| Content Designer | `content-designer` | Design Team | opus |
 | Cryptography & Secrets Engineer | `cryptography-secrets-engineer` | Security Engineering Team | opus |
 | Data & AI Engineering Lead | `data-ai-lead` | Data & AI Engineering Team | opus |
 | Data Architect | `data-architect` | Architecture Team | opus |
-| Data Engineer | `data-engineer` | Data & AI Engineering Team | sonnet |
-| Data Governance Engineer | `data-governance-engineer` | Governance, Risk & Privacy Team | sonnet |
-| Data Quality Test Engineer | `data-quality-test-engineer` | Quality Engineering Team | sonnet |
+| Data Engineer | `data-engineer` | Data & AI Engineering Team | opus |
+| Data Governance Engineer | `data-governance-engineer` | Governance, Risk & Privacy Team | opus |
+| Data Quality Test Engineer | `data-quality-test-engineer` | Quality Engineering Team | opus |
 | Database Architect | `database-architect` | Architecture Team | opus |
-| Database Engineer | `database-engineer` | Backend Engineering Team | sonnet |
-| Database Test Engineer | `database-test-engineer` | Quality Engineering Team | sonnet |
-| Delivery Manager | `delivery-manager` | Leadership Team | sonnet |
+| Database Engineer | `database-engineer` | Backend Engineering Team | opus |
+| Database Test Engineer | `database-test-engineer` | Quality Engineering Team | opus |
+| Delivery Manager | `delivery-manager` | Leadership Team | opus |
 | Design Lead | `design-lead` | Design Team | opus |
-| Design Ops Engineer | `design-ops-engineer` | Design Team | sonnet |
-| Design QA Engineer | `design-qa-engineer` | Design Team | sonnet |
-| Design System Engineer | `design-system-engineer` | Frontend Engineering Team | sonnet |
-| Desktop Engineer | `desktop-engineer` | Frontend Engineering Team | sonnet |
+| Design Ops Engineer | `design-ops-engineer` | Design Team | opus |
+| Design QA Engineer | `design-qa-engineer` | Design Team | opus |
+| Design System Engineer | `design-system-engineer` | Frontend Engineering Team | opus |
+| Desktop Engineer | `desktop-engineer` | Frontend Engineering Team | opus |
 | DevSecOps Engineer | `devsecops-engineer` | Security Engineering Team | opus |
-| Developer Experience (DevEx) Engineer | `developer-experience-engineer` | Platform Engineering Team | sonnet |
+| Developer Experience (DevEx) Engineer | `developer-experience-engineer` | Platform Engineering Team | opus |
 | Distributed Systems Engineer | `distributed-systems-engineer` | Backend Engineering Team | opus |
 | Domain Architect | `domain-architect` | Architecture Team | opus |
-| ERP Engineer | `erp-engineer` | Enterprise Applications Team | sonnet |
-| Endpoint & Device Management Engineer | `endpoint-management-engineer` | IT Operations & Infrastructure Team | sonnet |
+| ERP Engineer | `erp-engineer` | Enterprise Applications Team | opus |
+| Endpoint & Device Management Engineer | `endpoint-management-engineer` | IT Operations & Infrastructure Team | opus |
 | Engineering Excellence Lead | `excellence-lead` | Engineering Excellence Team | opus |
-| Engineering Intelligence & Reporting Engineer | `engineering-intelligence-reporting-engineer` | Engineering Excellence Team | sonnet |
-| Engineering Standards Engineer | `engineering-standards-engineer` | Engineering Excellence Team | sonnet |
+| Engineering Intelligence & Reporting Engineer | `engineering-intelligence-reporting-engineer` | Engineering Excellence Team | opus |
+| Engineering Standards Engineer | `engineering-standards-engineer` | Engineering Excellence Team | opus |
 | Enterprise Applications Lead | `entapps-lead` | Enterprise Applications Team | opus |
 | Enterprise Architect | `enterprise-architect` | Architecture Team | opus |
-| Event Streaming Engineer | `event-streaming-engineer` | Backend Engineering Team | sonnet |
-| Feature Store Engineer | `feature-store-engineer` | MLOps & Model Operations Team | sonnet |
+| Event Streaming Engineer | `event-streaming-engineer` | Backend Engineering Team | opus |
+| Feature Store Engineer | `feature-store-engineer` | MLOps & Model Operations Team | opus |
 | FinOps & Cost Engineering Lead | `finops-lead` | FinOps & Cost Engineering Team | opus |
-| FinOps Engineer | `finops-engineer` | FinOps & Cost Engineering Team | sonnet |
+| FinOps Engineer | `finops-engineer` | FinOps & Cost Engineering Team | opus |
 | Frontend Architect | `frontend-architect` | Architecture Team | opus |
-| Frontend Engineer | `frontend-engineer` | Frontend Engineering Team | sonnet |
+| Frontend Engineer | `frontend-engineer` | Frontend Engineering Team | opus |
 | Frontend Engineering Lead | `frontend-lead` | Frontend Engineering Team | opus |
 | Governance, Risk & Privacy Lead | `grc-lead` | Governance, Risk & Privacy Team | opus |
 | IT Director | `it-director` | Leadership Team | opus |
 | IT Operations & Infrastructure Lead | `itops-lead` | IT Operations & Infrastructure Team | opus |
-| IT Policy Engineer | `it-policy-engineer` | Governance, Risk & Privacy Team | sonnet |
-| IT Service Desk Engineer | `it-service-desk-engineer` | IT Operations & Infrastructure Team | sonnet |
+| IT Policy Engineer | `it-policy-engineer` | Governance, Risk & Privacy Team | opus |
+| IT Service Desk Engineer | `it-service-desk-engineer` | IT Operations & Infrastructure Team | opus |
 | Identity & Access Management (IAM) Engineer | `iam-engineer` | IT Operations & Infrastructure Team | opus |
 | Incident Response Engineer | `incident-response-engineer` | Release & Reliability Team | opus |
 | Integration Architect | `integration-architect` | Architecture Team | opus |
-| Interaction Designer | `interaction-designer` | Design Team | sonnet |
-| Internal Tools Engineer | `internal-tools-engineer` | Platform Engineering Team | sonnet |
-| Internationalization Engineer | `internationalization-engineer` | Frontend Engineering Team | sonnet |
-| Kubernetes Engineer | `kubernetes-engineer` | Platform Engineering Team | sonnet |
+| Interaction Designer | `interaction-designer` | Design Team | opus |
+| Internal Tools Engineer | `internal-tools-engineer` | Platform Engineering Team | opus |
+| Internationalization Engineer | `internationalization-engineer` | Frontend Engineering Team | opus |
+| Kubernetes Engineer | `kubernetes-engineer` | Platform Engineering Team | opus |
 | LLMOps Engineer | `llmops-engineer` | MLOps & Model Operations Team | opus |
-| Licensing & Vendor Manager | `licensing-vendor-manager` | FinOps & Cost Engineering Team | sonnet |
-| Low-Code Platform Engineer | `low-code-platform-engineer` | Enterprise Applications Team | sonnet |
-| ML Platform Engineer | `ml-platform-engineer` | MLOps & Model Operations Team | sonnet |
+| Licensing & Vendor Manager | `licensing-vendor-manager` | FinOps & Cost Engineering Team | opus |
+| Low-Code Platform Engineer | `low-code-platform-engineer` | Enterprise Applications Team | opus |
+| ML Platform Engineer | `ml-platform-engineer` | MLOps & Model Operations Team | opus |
 | MLOps & Model Operations Lead | `mlops-lead` | MLOps & Model Operations Team | opus |
 | MLOps Engineer | `mlops-engineer` | MLOps & Model Operations Team | opus |
-| Migration Engineer | `migration-engineer` | Backend Engineering Team | sonnet |
+| Migration Engineer | `migration-engineer` | Backend Engineering Team | opus |
 | Mobile Architect | `mobile-architect` | Architecture Team | opus |
-| Mobile Engineer | `mobile-engineer` | Mobile Engineering Team | sonnet |
+| Mobile Engineer | `mobile-engineer` | Mobile Engineering Team | opus |
 | Mobile Engineering Lead | `mobile-lead` | Mobile Engineering Team | opus |
-| Mobile UX Quality Engineer | `mobile-ux-quality-engineer` | Mobile Engineering Team | sonnet |
-| Model Monitoring Engineer | `model-monitoring-engineer` | MLOps & Model Operations Team | sonnet |
+| Mobile UX Quality Engineer | `mobile-ux-quality-engineer` | Mobile Engineering Team | opus |
+| Model Monitoring Engineer | `model-monitoring-engineer` | MLOps & Model Operations Team | opus |
 | Modernization Engineer | `modernization-engineer` | Engineering Excellence Team | opus |
-| Network Engineer | `network-engineer` | IT Operations & Infrastructure Team | sonnet |
-| Observability Engineer | `observability-engineer` | Platform Engineering Team | sonnet |
-| Observability Test Engineer | `observability-test-engineer` | Quality Engineering Team | sonnet |
-| Open Source Engineer | `open-source-engineer` | Platform Engineering Team | sonnet |
+| Network Engineer | `network-engineer` | IT Operations & Infrastructure Team | opus |
+| Observability Engineer | `observability-engineer` | Platform Engineering Team | opus |
+| Observability Test Engineer | `observability-test-engineer` | Quality Engineering Team | opus |
+| Open Source Engineer | `open-source-engineer` | Platform Engineering Team | opus |
 | Penetration Tester | `penetration-tester` | Security Engineering Team | opus |
-| Performance Test Engineer | `performance-test-engineer` | Quality Engineering Team | sonnet |
+| Performance Test Engineer | `performance-test-engineer` | Quality Engineering Team | opus |
 | Platform Architect | `platform-architect` | Architecture Team | opus |
-| Platform Engineer | `platform-engineer` | Platform Engineering Team | sonnet |
+| Platform Engineer | `platform-engineer` | Platform Engineering Team | opus |
 | Platform Engineering Lead | `platform-lead` | Platform Engineering Team | opus |
 | Privacy Engineer | `privacy-engineer` | Governance, Risk & Privacy Team | opus |
 | Product Design Architect | `product-design-architect` | Architecture Team | opus |
-| Product Designer | `product-designer` | Frontend Engineering Team | sonnet |
+| Product Designer | `product-designer` | Frontend Engineering Team | opus |
 | Product Innovation Engineer | `product-innovation-engineer` | Product Strategy Team | opus |
 | Product Manager | `product-manager` | Product Strategy Team | opus |
-| Product Owner | `product-owner` | Product Strategy Team | sonnet |
+| Product Owner | `product-owner` | Product Strategy Team | opus |
 | Product Strategy Lead | `product-lead` | Product Strategy Team | opus |
-| Production Readiness Engineer | `production-readiness-engineer` | Release & Reliability Team | sonnet |
+| Production Readiness Engineer | `production-readiness-engineer` | Release & Reliability Team | opus |
 | Prompt Engineer | `prompt-engineer` | MLOps & Model Operations Team | opus |
-| QA | `qa` | Quality Engineering Team | sonnet |
+| QA | `qa` | Quality Engineering Team | opus |
 | QA Architect | `qa-architect` | Architecture Team | opus |
 | Quality Engineering Lead | `quality-lead` | Quality Engineering Team | opus |
 | Release & Reliability Lead | `release-lead` | Release & Reliability Team | opus |
-| Release Manager | `release-manager` | Release & Reliability Team | sonnet |
-| Reliability Test Engineer | `reliability-test-engineer` | Quality Engineering Team | sonnet |
+| Release Manager | `release-manager` | Release & Reliability Team | opus |
+| Reliability Test Engineer | `reliability-test-engineer` | Quality Engineering Team | opus |
 | Retrieval & Search Engineer | `retrieval-search-engineer` | Data & AI Engineering Team | opus |
 | Risk Analyst | `risk-analyst` | Governance, Risk & Privacy Team | opus |
 | Security Architect | `security-architect` | Architecture Team | opus |
@@ -143,18 +143,18 @@
 | Security Operations (SOC) Analyst | `soc-analyst` | Security Engineering Team | opus |
 | Security Test Engineer | `security-test-engineer` | Quality Engineering Team | opus |
 | Site Reliability Engineer (SRE) | `site-reliability-engineer` | Release & Reliability Team | opus |
-| Streaming Data Engineer | `streaming-data-engineer` | Data & AI Engineering Team | sonnet |
+| Streaming Data Engineer | `streaming-data-engineer` | Data & AI Engineering Team | opus |
 | Supply Chain Security Engineer | `supply-chain-security-engineer` | Security Engineering Team | opus |
-| Systems Administrator | `systems-administrator` | IT Operations & Infrastructure Team | sonnet |
-| Systems Integration Engineer | `systems-integration-engineer` | Enterprise Applications Team | sonnet |
-| Technical Project Manager Agent | `technical-project-manager` | Product Strategy Team | sonnet |
-| Technical Writer | `technical-writer` | Engineering Excellence Team | sonnet |
-| Test Data Engineer | `test-data-engineer` | Quality Engineering Team | sonnet |
+| Systems Administrator | `systems-administrator` | IT Operations & Infrastructure Team | opus |
+| Systems Integration Engineer | `systems-integration-engineer` | Enterprise Applications Team | opus |
+| Technical Project Manager Agent | `technical-project-manager` | Product Strategy Team | opus |
+| Technical Writer | `technical-writer` | Engineering Excellence Team | opus |
+| Test Data Engineer | `test-data-engineer` | Quality Engineering Team | opus |
 | UI Designer | `ui-designer` | Design Team | opus |
 | UX Researcher | `ux-researcher` | Design Team | opus |
 | User Acceptance Tester | `user-acceptance-tester` | Quality Engineering Team | opus |
-| Virtualization Engineer | `virtualization-engineer` | IT Operations & Infrastructure Team | sonnet |
-| Web Performance Engineer | `web-performance-engineer` | Frontend Engineering Team | sonnet |
-| Web UX Quality Engineer | `web-ux-quality-engineer` | Frontend Engineering Team | sonnet |
-| Workflow Automation Engineer | `workflow-automation-engineer` | Enterprise Applications Team | sonnet |
-| iOS Engineer | `ios-engineer` | Mobile Engineering Team | sonnet |
+| Virtualization Engineer | `virtualization-engineer` | IT Operations & Infrastructure Team | opus |
+| Web Performance Engineer | `web-performance-engineer` | Frontend Engineering Team | opus |
+| Web UX Quality Engineer | `web-ux-quality-engineer` | Frontend Engineering Team | opus |
+| Workflow Automation Engineer | `workflow-automation-engineer` | Enterprise Applications Team | opus |
+| iOS Engineer | `ios-engineer` | Mobile Engineering Team | opus |

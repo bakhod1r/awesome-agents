@@ -1,7 +1,7 @@
 ---
 name: observability-test-engineer
 description: Ensure production is actually debuggable: signals exist, are correct, and are actionable. Invoke for quality-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

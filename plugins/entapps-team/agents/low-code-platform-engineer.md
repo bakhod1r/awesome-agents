@@ -1,7 +1,7 @@
 ---
 name: low-code-platform-engineer
 description: Enable safe citizen development: governed, monitored, and prevented from becoming shadow IT. Invoke for entapps-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

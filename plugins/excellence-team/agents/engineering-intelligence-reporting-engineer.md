@@ -1,7 +1,7 @@
 ---
 name: engineering-intelligence-reporting-engineer
 description: Measure engineering health with metrics that drive better decisions, not scoreboards. Invoke for excellence-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

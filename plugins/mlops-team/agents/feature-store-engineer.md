@@ -1,7 +1,7 @@
 ---
 name: feature-store-engineer
 description: Deliver consistent, fresh, point-in-time-correct features to both training and serving. Invoke for mlops-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

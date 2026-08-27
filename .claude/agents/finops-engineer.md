@@ -1,7 +1,7 @@
 ---
 name: finops-engineer
 description: Make spend visible and attributable, then drive down waste with evidence. Invoke for finops-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

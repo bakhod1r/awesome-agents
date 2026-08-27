@@ -1,7 +1,7 @@
 ---
 name: systems-integration-engineer
 description: Connect enterprise systems so data stays consistent across every business boundary. Invoke for entapps-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

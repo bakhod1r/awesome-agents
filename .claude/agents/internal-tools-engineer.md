@@ -1,7 +1,7 @@
 ---
 name: internal-tools-engineer
 description: Build the internal tools that turn manual operational work into safe self-service. Invoke for platform-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

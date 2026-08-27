@@ -1,7 +1,7 @@
 ---
 name: internationalization-engineer
 description: Make the product correct in every supported locale, script, and writing direction. Invoke for frontend-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

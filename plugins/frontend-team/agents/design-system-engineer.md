@@ -1,7 +1,7 @@
 ---
 name: design-system-engineer
 description: Build and maintain the component library so every surface stays consistent without forking. Invoke for frontend-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 

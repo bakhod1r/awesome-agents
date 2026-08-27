@@ -1,7 +1,7 @@
 ---
 name: release-manager
 description: Get changes to production predictably, with the risk visible and the rollback ready. Invoke for release-team work.
-model: sonnet
+model: opus
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 
