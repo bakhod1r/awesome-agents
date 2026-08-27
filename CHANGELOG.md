@@ -11,6 +11,44 @@ For this repository the semantics are:
 - **minor** — new agents, teams, skills, commands, or rules. Additive; nothing breaks.
 - **patch** — content corrections, tooling fixes, site fixes.
 
+## [1.3.0] - 2026-08-27
+
+### Added
+
+**Design Team — 5 agents.** `ui-designer`, `ux-researcher`, `interaction-designer`,
+`content-designer`, `design-ops-engineer`. Interface work previously started inside
+component code because no team owned the step before it. The team's output is a set of
+working mock alternatives with one recommended, a flow and state spec, the interface copy,
+and a list of what the design system does not yet cover. Source: `scripts/agents_data_design.py`.
+
+**One command per team.** `/team-frontend`, `/team-design`, `/team-backend`, and so on for
+all 17 teams — the roster arrives inline, so naming the team is enough and `/team` no longer
+has to guess. Generated from `TEAMS` in `generate.py`; 12 commands become 29.
+
+### Changed
+
+**The delivery pipeline has six stages, not five.** `orchestration` (`/flow`) gains
+**③ SHAPE**, owned by the Design Team, gated on a mock: a user-facing change with no mock
+does not proceed, and a described layout is not a mock. The order is ① Discover,
+② Architect, ③ Shape, ④ Build, ⑤ Verify, ⑥ Release — architecture returns the contract
+design works inside, stated with its cost rather than as a wall, and design pushes back when
+the user's flow genuinely needs more. A shipped screen that does not match the approved mock
+is now a verify-stage finding.
+
+**Post-release verification is a stage, not a hope.** New **⑦ Observe**: a smoke pass on the
+real environment within minutes of deploy, a named health window watched with numbers, and
+①'s success metric measured on the window ① named — two checks on two clocks. A failed smoke
+or a breached abort threshold rolls back first and diagnoses second, and the kill criterion is
+checked against reality rather than renegotiated once the work is done. The measured result
+returns to ① as input, which makes the pipeline a cycle rather than a queue. Seven stages.
+
+**Backward flow is explicit.** A stage that cannot produce its artefact returns the work to
+the stage that made it impossible: ② hands back to ① when the feature as scoped cannot be
+built at acceptable cost, and product — not the architects — decides what is cut; ③ hands
+back to ② when the contract cannot carry the flow. Two bounces between ② and ③ escalate to
+①, on the grounds that the scope is wrong rather than the technique. Every backward step is
+reported with its reason.
+
 ## [1.2.0] - 2026-08-06
 
 ### Added

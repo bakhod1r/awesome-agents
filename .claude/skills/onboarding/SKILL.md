@@ -46,7 +46,7 @@ python3 scripts/generate.py
 ```
 
 Never hand-edit `.claude/agents/*.md` — regeneration overwrites it. That is deliberate:
-one source of truth is what keeps 109 agents consistent.
+one source of truth is what keeps 114 agents consistent.
 
 ### What separates a good agent record from a filler one
 

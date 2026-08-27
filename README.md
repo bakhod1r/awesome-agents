@@ -1,18 +1,18 @@
 # awesome-agents
 
-**109 specialist Claude Code subagents across 16 engineering teams — installable as a plugin marketplace.**
+**114 specialist Claude Code subagents across 17 engineering teams — installable as a plugin marketplace.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-![Agents](https://img.shields.io/badge/agents-109-8A63D2)
-![Teams](https://img.shields.io/badge/teams-16-8A63D2)
-![Commands](https://img.shields.io/badge/commands-12-8A63D2)
+![Agents](https://img.shields.io/badge/agents-114-8A63D2)
+![Teams](https://img.shields.io/badge/teams-17-8A63D2)
+![Commands](https://img.shields.io/badge/commands-29-8A63D2)
 ![Skills](https://img.shields.io/badge/skills-11-8A63D2)
 
 Most agent collections are a folder of prompts. This one enforces a chain:
 
 > **architect decides → engineer implements → quality verifies → release ships.**
 
-No link is skipped. Every agent is generated from one source of truth, so 109 roles
+No link is skipped. Every agent is generated from one source of truth, so 114 roles
 stay consistent instead of drifting apart file by file.
 
 ## Install
@@ -28,7 +28,7 @@ Install `agent-workflow` for the commands and skills, then one plugin per team y
 ### Pairs well with
 
 [caveman](https://github.com/juliusbrussee/caveman) — strips filler from model prose while
-leaving code, commands, file paths, and error strings byte-identical. 109 agents with a
+leaving code, commands, file paths, and error strings byte-identical. 114 agents with a
 ten-section contract each produce a lot of prose; this cuts the padding, not the reasoning.
 
 ```
@@ -54,7 +54,7 @@ stage for approval, so the work stays reviewable rather than arriving as one opa
 
 ## Teams
 
-Architecture · Backend Engineering · Frontend Engineering · Mobile Engineering · Data & AI Engineering · Platform Engineering · Quality Engineering · Security Engineering · Release & Reliability · Product Strategy · Engineering Excellence · IT Operations & Infrastructure · MLOps & Model Operations · FinOps & Cost Engineering · Enterprise Applications · Governance, Risk & Privacy
+Architecture · Backend Engineering · Frontend Engineering · Mobile Engineering · Data & AI Engineering · Platform Engineering · Quality Engineering · Security Engineering · Release & Reliability · Product Strategy · Engineering Excellence · IT Operations & Infrastructure · MLOps & Model Operations · FinOps & Cost Engineering · Enterprise Applications · Governance, Risk & Privacy · Design
 
 Full roster with every agent's `name`, mission, and model: [.claude/teams/README.md](.claude/teams/README.md).
 
@@ -63,9 +63,9 @@ Full roster with every agent's `name`, mission, and model: [.claude/teams/README
 ```
 CLAUDE.md              always loaded — the delegation rule
 .claude/
-  agents/              109 agent definitions        (generated)
-  teams/               16 charters + roster index    (generated)
-  commands/            12 slash commands
+  agents/              114 agent definitions        (generated)
+  teams/               17 charters + roster index    (generated)
+  commands/            29 slash commands
   skills/              11 on-demand procedures
   rules/               7 standing standards
   hooks/               SessionStart.sh
@@ -91,7 +91,7 @@ python3 scripts/generate.py   # rewrites everything marked (generated)
 ```
 
 Hand edits to generated files are lost, deliberately: one source of truth is what keeps
-109 agents consistent. See [CONTRIBUTING.md](CONTRIBUTING.md) and
+114 agents consistent. See [CONTRIBUTING.md](CONTRIBUTING.md) and
 [.claude/rules/agent-authoring.md](.claude/rules/agent-authoring.md).
 
 ## Docs

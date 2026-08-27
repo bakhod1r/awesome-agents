@@ -1,7 +1,7 @@
 {
   "name": "agent-workflow",
   "description": "Delegation commands, procedural skills, and engineering standards shared by every team plugin.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": {
     "name": "bakhod1r",
     "url": "https://github.com/bakhod1r/awesome-agents"

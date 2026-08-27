@@ -5,7 +5,7 @@
     "url": "https://github.com/bakhod1r/awesome-agents"
   },
   "metadata": {
-    "description": "109 specialist engineering agents across 16 teams, each written to a top 0.1% professional standard."
+    "description": "114 specialist engineering agents across 17 teams, each written to a top 0.1% professional standard."
   },
   "plugins": [
     {
@@ -92,6 +92,11 @@
       "name": "grc-team",
       "source": "./plugins/grc-team",
       "description": "Governance, Risk & Privacy Team: Privacy Engineer, Data Governance Engineer, Risk Analyst, Audit Engineer and 1 more."
+    },
+    {
+      "name": "design-team",
+      "source": "./plugins/design-team",
+      "description": "Design Team: UI Designer, UX Researcher, Interaction Designer, Content Designer and 1 more."
     }
   ]
 }

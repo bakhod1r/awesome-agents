@@ -450,7 +450,7 @@ Use the `orchestration` skill. You are the orchestrator — agents cannot call e
 so every hand-off passes through you.
 
 1. **Size it first.** Decide which stages this actually needs (see the skill's table) and
-   say which you are skipping and why. Do not run five stages on a one-line fix.
+   say which you are skipping and why. Do not run six stages on a one-line fix.
 2. **Run each stage** with the agents the skill names for it. Pass the previous stage's
    output **verbatim** as input, never a paraphrase.
 3. **Check the gate** after every stage. State PASSED, FAILED, or SKIPPED with the reason.
@@ -526,6 +526,40 @@ every diagnostic signal referenced actually exists.
 Walk the procedure once before finishing. Untested runbook does not ship.
 """),
     }
+    # One command per team: /team-frontend, /team-design, and so on. Typing the
+    # team is faster than describing the work and letting /team guess at it, and
+    # the roster arrives inline so no lookup round-trip is needed.
+    for key, team in TEAMS.items():
+        roster = [a for a in AGENTS if a["team"] == key]
+        listing = "\n".join(f"- `{a['slug']}` — {a['title']}: {a['mission']}" for a in roster)
+        commands[f"team-{key}.md"] = (
+            f"Delegate a task to the {team['title']} ({len(roster)} agents).",
+            f"""---
+description: Delegate a task to the {team['title']} ({len(roster)} agents).
+argument-hint: <task for the {team['title']}>
+---
+
+Task: $ARGUMENTS
+
+Team: **{team['title']}** — {team['mission']}
+
+Roster:
+
+{listing}
+
+1. Pick the minimum set of agents above that can complete the task. Name them and
+   say in one line why each is needed.
+2. Delegate to each with the Agent tool, `subagent_type` = the `slug` in backticks.
+   Agents cannot call each other — every hand-off passes through you.
+3. For work spanning several agents, run the team's architect or lead first, record
+   the decision, then fan out to the implementers.
+4. Merge the results, resolve contradictions explicitly, and report using the
+   output-discipline rule: claim, evidence (`file:line`), impact, ranked by severity.
+
+Do not do the work inline if a specialist agent above exists for it.
+""",
+        )
+
     for fname, (_, body) in commands.items():
         write(CLAUDE / "commands" / fname, body)
 

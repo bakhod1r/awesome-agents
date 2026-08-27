@@ -1,0 +1,16 @@
+{
+  "name": "design-team",
+  "description": "Design Team \u2014 5 specialist agents. Decide what the interface looks like and how it behaves, before a line of component code is written.",
+  "version": "1.3.0",
+  "author": {
+    "name": "bakhod1r",
+    "url": "https://github.com/bakhod1r/awesome-agents"
+  },
+  "homepage": "https://github.com/bakhod1r/awesome-agents",
+  "keywords": [
+    "claude-code",
+    "agents",
+    "subagents",
+    "design"
+  ]
+}

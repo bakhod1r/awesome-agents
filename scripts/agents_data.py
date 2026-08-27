@@ -1644,3 +1644,9 @@ from agents_data_ext import EXTRA_AGENTS, EXTRA_TEAMS  # noqa: E402
 
 TEAMS.update(EXTRA_TEAMS)
 AGENTS.extend(EXTRA_AGENTS)
+
+# --- third wave: the Design Team ---
+from agents_data_design import DESIGN_AGENTS, DESIGN_TEAMS  # noqa: E402
+
+TEAMS.update(DESIGN_TEAMS)
+AGENTS.extend(DESIGN_AGENTS)

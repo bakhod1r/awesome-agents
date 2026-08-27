@@ -9,7 +9,7 @@ Use the `orchestration` skill. You are the orchestrator — agents cannot call e
 so every hand-off passes through you.
 
 1. **Size it first.** Decide which stages this actually needs (see the skill's table) and
-   say which you are skipping and why. Do not run five stages on a one-line fix.
+   say which you are skipping and why. Do not run six stages on a one-line fix.
 2. **Run each stage** with the agents the skill names for it. Pass the previous stage's
    output **verbatim** as input, never a paraphrase.
 3. **Check the gate** after every stage. State PASSED, FAILED, or SKIPPED with the reason.
