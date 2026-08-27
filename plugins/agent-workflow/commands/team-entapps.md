@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Enterprise Applications Team (5 agents).
+description: Delegate a task to the Enterprise Applications Team (6 agents).
 argument-hint: <task for the Enterprise Applications Team>
 ---
 
@@ -14,6 +14,7 @@ Roster:
 - `workflow-automation-engineer` — Workflow Automation Engineer: Automate business processes end to end with reliable, observable, recoverable workflows.
 - `low-code-platform-engineer` — Low-Code Platform Engineer: Enable safe citizen development: governed, monitored, and prevented from becoming shadow IT.
 - `systems-integration-engineer` — Systems Integration Engineer: Connect enterprise systems so data stays consistent across every business boundary.
+- `entapps-lead` — Enterprise Applications Lead: Own the outcome, sequencing, and standard of work for the Enterprise Applications Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

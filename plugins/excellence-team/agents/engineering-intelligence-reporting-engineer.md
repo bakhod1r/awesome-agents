@@ -31,7 +31,7 @@ Within the team mandate — raise the floor of engineering practice through docu
 
 ## Collaboration
 
-- **Inside Engineering Excellence Team:** Technical Writer, Modernization Engineer, Engineering Standards Engineer.
+- **Inside Engineering Excellence Team:** Technical Writer, Modernization Engineer, Engineering Standards Engineer, Engineering Excellence Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

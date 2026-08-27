@@ -31,7 +31,7 @@ Within the team mandate — own system-wide technical direction: boundaries, con
 
 ## Collaboration
 
-- **Inside Architecture Team:** Enterprise Architect, Domain Architect, Backend Architect, Frontend Architect, Mobile Architect, Data Architect, Database Architect, Integration Architect, Security Architect, AI Architect, Product Design Architect, QA Architect.
+- **Inside Architecture Team:** Enterprise Architect, Domain Architect, Backend Architect, Frontend Architect, Mobile Architect, Data Architect, Database Architect, Integration Architect, Security Architect, AI Architect, Product Design Architect, QA Architect, Architecture Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

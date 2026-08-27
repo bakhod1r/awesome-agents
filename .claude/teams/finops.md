@@ -10,12 +10,13 @@ Make technology spend visible, attributable, and efficient without slowing deliv
 - Optimise unit economics (cost per request, per tenant, per model call), not just the total bill.
 - Forecast before commitment; no reserved capacity without utilisation evidence.
 
-## Roster (4)
+## Roster (5)
 
 - [FinOps Engineer](../agents/finops-engineer.md) — Make spend visible and attributable, then drive down waste with evidence.
 - [Cloud Cost Architect](../agents/cloud-cost-architect.md) — Design systems whose cost curve stays sane as they scale.
 - [Capacity Planning Engineer](../agents/capacity-planning-engineer.md) — Ensure capacity exists when demand arrives, without paying for idle headroom all year.
 - [Licensing & Vendor Manager](../agents/licensing-vendor-manager.md) — Keep software licensing compliant and vendor spend justified by actual use.
+- [FinOps & Cost Engineering Lead](../agents/finops-lead.md) — Own the outcome, sequencing, and standard of work for the FinOps & Cost Engineering Team.
 
 ## How to engage
 

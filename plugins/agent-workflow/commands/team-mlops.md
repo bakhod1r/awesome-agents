@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the MLOps & Model Operations Team (6 agents).
+description: Delegate a task to the MLOps & Model Operations Team (7 agents).
 argument-hint: <task for the MLOps & Model Operations Team>
 ---
 
@@ -15,6 +15,7 @@ Roster:
 - `model-monitoring-engineer` — Model Monitoring Engineer: Detect model degradation in production before users or the business feel it.
 - `prompt-engineer` — Prompt Engineer: Design, version, and optimise prompts as engineered artefacts with measured quality.
 - `llmops-engineer` — LLMOps Engineer: Operate LLM systems in production: routing, caching, quotas, observability, and failover.
+- `mlops-lead` — MLOps & Model Operations Lead: Own the outcome, sequencing, and standard of work for the MLOps & Model Operations Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the IT Operations & Infrastructure Team (8 agents).
+description: Delegate a task to the IT Operations & Infrastructure Team (9 agents).
 argument-hint: <task for the IT Operations & Infrastructure Team>
 ---
 
@@ -17,6 +17,7 @@ Roster:
 - `backup-disaster-recovery-engineer` — Backup & Disaster Recovery Engineer: Guarantee the organisation can come back from data loss, ransomware, or site failure.
 - `it-service-desk-engineer` — IT Service Desk Engineer: Resolve user-facing IT issues fast and eliminate their causes rather than their symptoms.
 - `virtualization-engineer` — Virtualization Engineer: Run hypervisor and virtual desktop platforms with predictable performance and clean capacity headroom.
+- `itops-lead` — IT Operations & Infrastructure Lead: Own the outcome, sequencing, and standard of work for the IT Operations & Infrastructure Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

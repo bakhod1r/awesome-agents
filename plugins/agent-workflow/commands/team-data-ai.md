@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Data & AI Engineering Team (6 agents).
+description: Delegate a task to the Data & AI Engineering Team (7 agents).
 argument-hint: <task for the Data & AI Engineering Team>
 ---
 
@@ -15,6 +15,7 @@ Roster:
 - `analytics-engineer` — Analytics Engineer: Turn raw tables into a tested, documented metric layer the business can trust.
 - `retrieval-search-engineer` — Retrieval & Search Engineer: Build retrieval that returns the right context, measured against a labelled set rather than vibes.
 - `streaming-data-engineer` — Streaming Data Engineer: Deliver correct real-time data under late arrival, replay, and out-of-order events.
+- `data-ai-lead` — Data & AI Engineering Lead: Own the outcome, sequencing, and standard of work for the Data & AI Engineering Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

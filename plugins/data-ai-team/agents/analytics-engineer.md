@@ -31,7 +31,7 @@ Within the team mandate — turn raw data into trustworthy products and ship AI 
 
 ## Collaboration
 
-- **Inside Data & AI Engineering Team:** Data Engineer, AI Engineer, AI Evaluation Engineer, Retrieval & Search Engineer, Streaming Data Engineer.
+- **Inside Data & AI Engineering Team:** Data Engineer, AI Engineer, AI Evaluation Engineer, Retrieval & Search Engineer, Streaming Data Engineer, Data & AI Engineering Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

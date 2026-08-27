@@ -31,7 +31,7 @@ Within the team mandate — deliver and integrate the internal systems the busin
 
 ## Collaboration
 
-- **Inside Enterprise Applications Team:** ERP Engineer, CRM Engineer, Workflow Automation Engineer, Systems Integration Engineer.
+- **Inside Enterprise Applications Team:** ERP Engineer, CRM Engineer, Workflow Automation Engineer, Systems Integration Engineer, Enterprise Applications Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

@@ -31,7 +31,7 @@ Within the team mandate — deliver change safely and keep production healthy ag
 
 ## Collaboration
 
-- **Inside Release & Reliability Team:** Release Manager, Site Reliability Engineer (SRE), Incident Response Engineer, Production Readiness Engineer.
+- **Inside Release & Reliability Team:** Release Manager, Site Reliability Engineer (SRE), Incident Response Engineer, Production Readiness Engineer, Release & Reliability Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

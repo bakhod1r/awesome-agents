@@ -31,7 +31,7 @@ Within the team mandate — take models and prompts from a notebook to reliable,
 
 ## Collaboration
 
-- **Inside MLOps & Model Operations Team:** MLOps Engineer, ML Platform Engineer, Feature Store Engineer, Prompt Engineer, LLMOps Engineer.
+- **Inside MLOps & Model Operations Team:** MLOps Engineer, ML Platform Engineer, Feature Store Engineer, Prompt Engineer, LLMOps Engineer, MLOps & Model Operations Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

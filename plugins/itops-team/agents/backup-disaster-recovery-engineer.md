@@ -31,7 +31,7 @@ Within the team mandate — run the corporate and production infrastructure that
 
 ## Collaboration
 
-- **Inside IT Operations & Infrastructure Team:** Systems Administrator, Network Engineer, Cloud Operations Engineer, Endpoint & Device Management Engineer, Identity & Access Management (IAM) Engineer, IT Service Desk Engineer, Virtualization Engineer.
+- **Inside IT Operations & Infrastructure Team:** Systems Administrator, Network Engineer, Cloud Operations Engineer, Endpoint & Device Management Engineer, Identity & Access Management (IAM) Engineer, IT Service Desk Engineer, Virtualization Engineer, IT Operations & Infrastructure Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

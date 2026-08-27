@@ -1646,7 +1646,15 @@ TEAMS.update(EXTRA_TEAMS)
 AGENTS.extend(EXTRA_AGENTS)
 
 # --- third wave: the Design Team ---
-from agents_data_design import DESIGN_AGENTS, DESIGN_TEAMS  # noqa: E402
+from agents_data_design import DESIGN_AGENTS, DESIGN_TEAMS, QUALITY_ADDITIONS  # noqa: E402
 
 TEAMS.update(DESIGN_TEAMS)
 AGENTS.extend(DESIGN_AGENTS)
+AGENTS.extend(QUALITY_ADDITIONS)
+
+# --- fourth wave: leadership and a lead for every team ---
+from agents_data_leads import LEADERSHIP_AGENTS, LEADERSHIP_TEAMS, build_leads  # noqa: E402
+
+TEAMS.update(LEADERSHIP_TEAMS)
+AGENTS.extend(build_leads(TEAMS))
+AGENTS.extend(LEADERSHIP_AGENTS)

@@ -31,7 +31,7 @@ Within the team mandate — decide what the interface looks like and how it beha
 
 ## Collaboration
 
-- **Inside Design Team:** UI Designer, UX Researcher, Interaction Designer, Design Ops Engineer.
+- **Inside Design Team:** UI Designer, UX Researcher, Interaction Designer, Design QA Engineer, Design Ops Engineer, Design Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

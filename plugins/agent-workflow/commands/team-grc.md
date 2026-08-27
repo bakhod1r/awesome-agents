@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Governance, Risk & Privacy Team (5 agents).
+description: Delegate a task to the Governance, Risk & Privacy Team (6 agents).
 argument-hint: <task for the Governance, Risk & Privacy Team>
 ---
 
@@ -14,6 +14,7 @@ Roster:
 - `risk-analyst` — Risk Analyst: Identify, quantify, and track technology risk so decisions are made with the exposure visible.
 - `audit-engineer` — Audit Engineer: Make audits routine by generating control evidence continuously from the systems themselves.
 - `it-policy-engineer` — IT Policy Engineer: Write policy people can follow and machines can enforce, then retire the policy that no longer applies.
+- `grc-lead` — Governance, Risk & Privacy Lead: Own the outcome, sequencing, and standard of work for the Governance, Risk & Privacy Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

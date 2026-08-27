@@ -10,13 +10,14 @@ Keep the organisation defensible: privacy by design, governed data, tracked risk
 - Risk is registered with owner, likelihood, impact, mitigation, and expiry.
 - Evidence is produced by the system on demand; audits are a query, not a project.
 
-## Roster (5)
+## Roster (6)
 
 - [Privacy Engineer](../agents/privacy-engineer.md) — Build privacy into systems technically: minimisation, purpose limitation, and enforceable rights.
 - [Data Governance Engineer](../agents/data-governance-engineer.md) — Make data trustworthy, findable, classified, and correctly permissioned across the organisation.
 - [Risk Analyst](../agents/risk-analyst.md) — Identify, quantify, and track technology risk so decisions are made with the exposure visible.
 - [Audit Engineer](../agents/audit-engineer.md) — Make audits routine by generating control evidence continuously from the systems themselves.
 - [IT Policy Engineer](../agents/it-policy-engineer.md) — Write policy people can follow and machines can enforce, then retire the policy that no longer applies.
+- [Governance, Risk & Privacy Lead](../agents/grc-lead.md) — Own the outcome, sequencing, and standard of work for the Governance, Risk & Privacy Team.
 
 ## How to engage
 

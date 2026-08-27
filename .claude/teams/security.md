@@ -10,7 +10,7 @@ Make the system secure by default and prove it with threat models, tests, and co
 - Shift left without becoming a blocking gate: automate the checks.
 - Findings carry severity, exploitability, and a concrete remediation.
 
-## Roster (8)
+## Roster (9)
 
 - [Application Security Engineer](../agents/application-security-engineer.md) — Build security into applications through review, tooling, and developer enablement.
 - [DevSecOps Engineer](../agents/devsecops-engineer.md) — Automate security controls across the software supply chain and runtime.
@@ -20,6 +20,7 @@ Make the system secure by default and prove it with threat models, tests, and co
 - [Security Operations (SOC) Analyst](../agents/soc-analyst.md) — Detect, triage, and contain attacks in progress with evidence and speed.
 - [Penetration Tester](../agents/penetration-tester.md) — Prove exploitability within authorised scope, and hand back findings engineers can fix.
 - [Cloud Security Engineer](../agents/cloud-security-engineer.md) — Secure the cloud estate: identity, configuration, workloads, and data at rest and in motion.
+- [Security Engineering Lead](../agents/security-lead.md) — Own the outcome, sequencing, and standard of work for the Security Engineering Team.
 
 ## How to engage
 

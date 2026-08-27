@@ -31,7 +31,7 @@ Within the team mandate — build correct, observable, horizontally scalable ser
 
 ## Collaboration
 
-- **Inside Backend Engineering Team:** Backend Developer, Database Engineer, Migration Engineer, Event Streaming Engineer, API Gateway Engineer, Distributed Systems Engineer.
+- **Inside Backend Engineering Team:** Backend Developer, Database Engineer, Migration Engineer, Event Streaming Engineer, API Gateway Engineer, Distributed Systems Engineer, Backend Engineering Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

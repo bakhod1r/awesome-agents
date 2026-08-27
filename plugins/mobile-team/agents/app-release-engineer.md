@@ -31,7 +31,7 @@ Within the team mandate — ship native-quality mobile experiences that survive 
 
 ## Collaboration
 
-- **Inside Mobile Engineering Team:** Mobile Engineer, Mobile UX Quality Engineer, iOS Engineer, Android Engineer.
+- **Inside Mobile Engineering Team:** Mobile Engineer, Mobile UX Quality Engineer, iOS Engineer, Android Engineer, Mobile Engineering Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

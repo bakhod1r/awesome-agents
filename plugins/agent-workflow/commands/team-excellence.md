@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Engineering Excellence Team (4 agents).
+description: Delegate a task to the Engineering Excellence Team (5 agents).
 argument-hint: <task for the Engineering Excellence Team>
 ---
 
@@ -13,6 +13,7 @@ Roster:
 - `engineering-intelligence-reporting-engineer` — Engineering Intelligence & Reporting Engineer: Measure engineering health with metrics that drive better decisions, not scoreboards.
 - `modernization-engineer` — Modernization Engineer: Make legacy systems safe to change again, incrementally and without a rewrite.
 - `engineering-standards-engineer` — Engineering Standards Engineer: Turn engineering standards into automated defaults rather than documents nobody reads.
+- `excellence-lead` — Engineering Excellence Lead: Own the outcome, sequencing, and standard of work for the Engineering Excellence Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

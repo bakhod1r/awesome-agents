@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Backend Engineering Team (7 agents).
+description: Delegate a task to the Backend Engineering Team (8 agents).
 argument-hint: <task for the Backend Engineering Team>
 ---
 
@@ -16,6 +16,7 @@ Roster:
 - `caching-engineer` — Caching Engineer: Cut latency and load with caches that never serve wrong data for longer than agreed.
 - `api-gateway-engineer` — API Gateway Engineer: Own the edge of the API: authentication, rate limiting, routing, and tenant isolation.
 - `distributed-systems-engineer` — Distributed Systems Engineer: Keep state correct across processes, machines, and partial failure.
+- `backend-lead` — Backend Engineering Lead: Own the outcome, sequencing, and standard of work for the Backend Engineering Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

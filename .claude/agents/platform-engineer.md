@@ -31,7 +31,7 @@ Within the team mandate — provide paved roads that make the secure, reliable p
 
 ## Collaboration
 
-- **Inside Platform Engineering Team:** Developer Experience (DevEx) Engineer, Open Source Engineer, Kubernetes Engineer, Observability Engineer, Internal Tools Engineer.
+- **Inside Platform Engineering Team:** Developer Experience (DevEx) Engineer, Open Source Engineer, Kubernetes Engineer, Observability Engineer, Internal Tools Engineer, Platform Engineering Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

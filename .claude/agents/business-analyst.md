@@ -31,7 +31,7 @@ Within the team mandate — decide what to build and why, with evidence, sequenc
 
 ## Collaboration
 
-- **Inside Product Strategy Team:** Product Manager, Product Owner, Product Innovation Engineer, Technical Project Manager Agent.
+- **Inside Product Strategy Team:** Product Manager, Product Owner, Product Innovation Engineer, Technical Project Manager Agent, Product Strategy Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

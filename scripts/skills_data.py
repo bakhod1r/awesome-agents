@@ -1023,10 +1023,12 @@ Every hand-off passes through you, which is what makes the chain inspectable.
         │        │                  ▼
         │        │  ┌─────────────────────────────────────────────────┐
         │        │  │ ③ SHAPE     Design — ui-designer, ux-researcher,
-        │        │  │             interaction-designer, content-designer
-        │        │  │             → 2-3 mock files, one recommended,
-        │        │  │               flow + state spec, interface copy
+        │        │  │             interaction-designer, content-designer,
+        │        │  │             then design-qa-engineer tests the design itself
+        │        │  │             → 2-3 mock files, one recommended, every reachable
+        │        │  │               case drawn, flow + state spec, interface copy
         │        │  │             ⛔ visible change with no mock → nothing to build
+        │        │  │             ⛔ design QA finds an undrawn case → not ready
         │        │  └────────────────────────┬────────────────────────┘
         │        │                           │  chosen mock + state spec
         │        │                           ▼
@@ -1062,11 +1064,14 @@ Every hand-off passes through you, which is what makes the chain inspectable.
         │        │                     handed over, then deployed
         │        │                                │
         │        │                  ┌─────────────▼────────────────────┐
-        │        │                  │ ⑦ OBSERVE  qa + site-reliability-engineer
+        │        │                  │ ⑦ OBSERVE  qa + user-acceptance-tester
+        │        │                  │            + site-reliability-engineer
         │        │                  │            + product-manager on the metric
         │        │                  │            → post-deploy smoke on the real
-        │        │                  │              environment, error and latency
-        │        │                  │              watch, then ①'s metric measured
+        │        │                  │              environment, a profile panel of real
+        │        │                  │              users by age and sector running the
+        │        │                  │              task, error and latency watch, then
+        │        │                  │              ①'s metric measured
         │        │                  │            ⛔ smoke fails or abort threshold hit
         │        │                  │              → roll back now, diagnose after
         │        │                  └─────────────┬────────────────────┘
@@ -1123,10 +1128,10 @@ was drawn against a guess.
 
 | | |
 |---|---|
-| **Agents** | `ui-designer` for any visible surface; add `ux-researcher` when the user's behaviour is disputed, `interaction-designer` for multi-step flows, `content-designer` for the strings, `design-ops-engineer` to say what the system already covers |
+| **Agents** | `ui-designer` for any visible surface; add `ux-researcher` when the user's behaviour is disputed, `interaction-designer` for multi-step flows, `content-designer` for the strings, `design-ops-engineer` to say what the system already covers; `design-qa-engineer` closes the stage |
 | **Needs** | Stage ① and ② output verbatim — the contract and its limits — plus the design system and the existing screens in the same flow |
 | **Returns** | Two to three mock files with paths, the recommended variant marked, flow and state spec, interface copy, and the list of new tokens or components required |
-| **Gate** | A user-facing change with no mock does not proceed. A described layout is not a mock. |
+| **Gate** | A user-facing change with no mock does not proceed. A described layout is not a mock. `design-qa-engineer` must find no undrawn reachable case. |
 
 Skip this stage only when nothing visible changes, and say so.
 
@@ -1141,6 +1146,13 @@ fields. Quietly working around the contract in ④ is the failure this ordering 
 
 **Where a mock needs a component the design system lacks**, say so here. It is an input to
 ④, not something an engineer invents mid-build.
+
+**The design gets tested before anything is built.** `design-qa-engineer` walks the mock set
+the way a user would and looks for the case nobody drew: the branch, the role, the limit, the
+empty and worst-case content, the state with no way out. Contrast, target size, focus order,
+and keyboard operability are checked here, on the mock, where fixing them costs an edit
+rather than a rebuild. A design is not ready because it looks finished; it is ready when
+every reachable case is drawn or explicitly ruled out of scope.
 
 ### ④ Build — owning engineering team
 
@@ -1206,16 +1218,24 @@ the feature works for users. This stage closes that gap, and it is the one most 
 
 | | |
 |---|---|
-| **Agents** | `qa` for the smoke pass; `site-reliability-engineer` for error, latency, and saturation; `product-manager` to read ①'s metric; add `web-ux-quality-engineer` when a user-facing flow changed |
+| **Agents** | `qa` for the smoke pass; `user-acceptance-tester` for the profile panel; `site-reliability-engineer` for error, latency, and saturation; `product-manager` to read ①'s metric; add `web-ux-quality-engineer` when a user-facing flow changed |
 | **Needs** | The deployed version, ①'s success metric and kill criterion, the rollout plan's abort threshold, the runbook |
 | **Returns** | Smoke result on the real environment, the health window observed with numbers, the metric measured against ①'s target, and the decision: continue, hold, or roll back |
 | **Gate** | Smoke failure or a breached abort threshold rolls back immediately. Diagnose from the rolled-back state, never from the burning one. |
 
-**Two checks, on two clocks.** The smoke pass runs within minutes of the deploy and answers
+**Real people, not the team.** `user-acceptance-tester` runs the released flow as a panel of
+concrete profiles spanning the age range and the sectors the product claims to serve, on their
+devices and their connections, with no instructions. The team cannot produce this evidence
+itself: everyone who built it knows where the button is. A finding is ranked by how many
+profiles failed, not by how surprising it was — one profile stuck is a case, every profile
+stuck is a design defect that ③ and ⑤ both missed.
+
+**Three checks, on three clocks.** The smoke pass runs within minutes of the deploy and answers
 "is it alive": the critical path works end to end against real infrastructure, with real
 auth, real data, and the config that environment actually has — the class of failure no test
-double can catch. The metric read comes days or weeks later, on the window ① named, and
-answers "did it work". Both are this stage. Reporting only the first is the usual failure.
+double can catch. The panel runs in the days after, and answers "can a stranger do it". The
+metric read comes days or weeks later, on the window ① named, and answers "did it work".
+All three are this stage. Reporting only the first is the usual failure.
 
 **Watch what the change can break, not everything.** Name the signals before the deploy:
 error rate on the touched endpoints, p99 on the changed path, the funnel step ① measured,
@@ -1229,6 +1249,28 @@ the work is done was never a criterion — it was a formality, and every later o
 **Then close the loop.** The measured result returns to ① as input: the metric moved and
 the next increment is scoped, it did not move and the problem statement was wrong, or the
 feature is withdrawn. This is what makes the pipeline a cycle rather than a queue.
+
+## Who is accountable for a stage
+
+Every stage has a lead who owns its result end to end — `product-lead`, `architecture-lead`,
+`design-lead`, the owning engineering lead, `quality-lead`, `release-lead`. The specialists
+produce the work; the lead is answerable for whether the stage's artefact is real, whether
+the gate was honestly assessed, and whether the hand-off carried everything the next stage
+needs.
+
+| | |
+|---|---|
+| **Owns** | The stage artefact, the gate verdict, and the state of the hand-off |
+| **Decides** | Disagreements inside the team, and what is sent back rather than shipped with a caveat |
+| **Escalates** | To `it-director` when two team leads cannot agree, always with a proposed decision |
+| **Never** | Reports a gate as passed on work whose evidence they have not seen |
+
+A backward step is reported by the lead who received the work, naming the stage it went back
+to and why. `delivery-manager` tracks the hand-offs between teams — the boundary is where
+work waits longest, and it is nobody's specialist job to notice.
+
+Cross-team conflict that survives two attempts goes to `it-director`, who picks one position
+rather than averaging them, and states what would reverse the decision.
 
 ## Going backwards
 

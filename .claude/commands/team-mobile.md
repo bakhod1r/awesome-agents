@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Mobile Engineering Team (5 agents).
+description: Delegate a task to the Mobile Engineering Team (6 agents).
 argument-hint: <task for the Mobile Engineering Team>
 ---
 
@@ -14,6 +14,7 @@ Roster:
 - `ios-engineer` — iOS Engineer: Build iOS features that feel native, respect platform conventions, and survive App Review.
 - `android-engineer` — Android Engineer: Build Android features that behave correctly across a fragmented device, OEM, and version matrix.
 - `app-release-engineer` — App Release Engineer: Get mobile builds to users predictably, with staged rollout and a kill switch that works.
+- `mobile-lead` — Mobile Engineering Lead: Own the outcome, sequencing, and standard of work for the Mobile Engineering Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

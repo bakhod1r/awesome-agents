@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Architecture Team (13 agents).
+description: Delegate a task to the Architecture Team (14 agents).
 argument-hint: <task for the Architecture Team>
 ---
 
@@ -22,6 +22,7 @@ Roster:
 - `ai-architect` — AI Architect: Design AI systems end to end: model strategy, retrieval, evaluation, safety, and cost.
 - `product-design-architect` — Product Design Architect: Own the design system architecture and interaction patterns across every surface.
 - `qa-architect` — QA Architect: Design the quality strategy: what is tested, at which layer, and with what feedback speed.
+- `architecture-lead` — Architecture Lead: Own the outcome, sequencing, and standard of work for the Architecture Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

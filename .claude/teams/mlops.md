@@ -10,7 +10,7 @@ Take models and prompts from a notebook to reliable, monitored, reproducible pro
 - Drift, quality, latency, and cost are monitored continuously, not at review time.
 - Rollback to the previous model or prompt is a one-command operation.
 
-## Roster (6)
+## Roster (7)
 
 - [MLOps Engineer](../agents/mlops-engineer.md) — Make model training and deployment reproducible, automated, and reversible.
 - [ML Platform Engineer](../agents/ml-platform-engineer.md) — Provide the compute, storage, and tooling that lets ML teams move without touching infrastructure.
@@ -18,6 +18,7 @@ Take models and prompts from a notebook to reliable, monitored, reproducible pro
 - [Model Monitoring Engineer](../agents/model-monitoring-engineer.md) — Detect model degradation in production before users or the business feel it.
 - [Prompt Engineer](../agents/prompt-engineer.md) — Design, version, and optimise prompts as engineered artefacts with measured quality.
 - [LLMOps Engineer](../agents/llmops-engineer.md) — Operate LLM systems in production: routing, caching, quotas, observability, and failover.
+- [MLOps & Model Operations Lead](../agents/mlops-lead.md) — Own the outcome, sequencing, and standard of work for the MLOps & Model Operations Team.
 
 ## How to engage
 

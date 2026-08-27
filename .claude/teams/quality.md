@@ -10,7 +10,7 @@ Prevent defects from reaching users through risk-based testing, automation, and 
 - No flaky test stays green-listed; quarantine and fix or delete.
 - Every escaped defect produces a regression test and a root cause.
 
-## Roster (15)
+## Roster (17)
 
 - [QA](../agents/qa.md) — Verify that what shipped matches what was intended, and find what nobody specified.
 - [Automation QA Engineer](../agents/automation-qa-engineer.md) — Build fast, stable automated test suites that teams actually trust.
@@ -27,6 +27,8 @@ Prevent defects from reaching users through risk-based testing, automation, and 
 - [Database Test Engineer](../agents/database-test-engineer.md) — Test the database layer: correctness under concurrency, migrations, and recovery.
 - [Test Data Engineer](../agents/test-data-engineer.md) — Provide realistic, safe, on-demand test data for every environment.
 - [Code Reviewer](../agents/code-reviewer.md) — Catch correctness, security, and maintainability defects before merge.
+- [User Acceptance Tester](../agents/user-acceptance-tester.md) — Use the released product as the actual customers do, across their range of age, sector, and skill.
+- [Quality Engineering Lead](../agents/quality-lead.md) — Own the outcome, sequencing, and standard of work for the Quality Engineering Team.
 
 ## How to engage
 

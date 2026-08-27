@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the FinOps & Cost Engineering Team (4 agents).
+description: Delegate a task to the FinOps & Cost Engineering Team (5 agents).
 argument-hint: <task for the FinOps & Cost Engineering Team>
 ---
 
@@ -13,6 +13,7 @@ Roster:
 - `cloud-cost-architect` — Cloud Cost Architect: Design systems whose cost curve stays sane as they scale.
 - `capacity-planning-engineer` — Capacity Planning Engineer: Ensure capacity exists when demand arrives, without paying for idle headroom all year.
 - `licensing-vendor-manager` — Licensing & Vendor Manager: Keep software licensing compliant and vendor spend justified by actual use.
+- `finops-lead` — FinOps & Cost Engineering Lead: Own the outcome, sequencing, and standard of work for the FinOps & Cost Engineering Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

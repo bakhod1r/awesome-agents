@@ -10,7 +10,7 @@ Build correct, observable, horizontally scalable services and the data layer ben
 - Keep schema changes backward compatible and reversible.
 - Own p99 latency and error budgets for owned endpoints.
 
-## Roster (7)
+## Roster (8)
 
 - [Backend Developer](../agents/backend-developer.md) — Implement backend services and APIs that are correct, tested, observable, and fast.
 - [Database Engineer](../agents/database-engineer.md) — Keep databases fast, correct, and operable through tuning, migrations, and monitoring.
@@ -19,6 +19,7 @@ Build correct, observable, horizontally scalable services and the data layer ben
 - [Caching Engineer](../agents/caching-engineer.md) — Cut latency and load with caches that never serve wrong data for longer than agreed.
 - [API Gateway Engineer](../agents/api-gateway-engineer.md) — Own the edge of the API: authentication, rate limiting, routing, and tenant isolation.
 - [Distributed Systems Engineer](../agents/distributed-systems-engineer.md) — Keep state correct across processes, machines, and partial failure.
+- [Backend Engineering Lead](../agents/backend-lead.md) — Own the outcome, sequencing, and standard of work for the Backend Engineering Team.
 
 ## How to engage
 

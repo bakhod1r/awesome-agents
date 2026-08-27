@@ -31,7 +31,7 @@ Within the team mandate — deliver fast, accessible, resilient user interfaces 
 
 ## Collaboration
 
-- **Inside Frontend Engineering Team:** Frontend Engineer, Product Designer, Design System Engineer, Web Performance Engineer, Internationalization Engineer, Desktop Engineer.
+- **Inside Frontend Engineering Team:** Frontend Engineer, Product Designer, Design System Engineer, Web Performance Engineer, Internationalization Engineer, Desktop Engineer, Frontend Engineering Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

@@ -18,7 +18,7 @@ The `name` in frontmatter is what the Agent tool takes. It is the kebab-case slu
 ## Lookup procedure
 
 1. Reduce the request to a **domain noun**: "migration", "drift", "egress cost", "screen reader".
-2. Grep the roster for it. `.claude/teams/README.md` holds all 114 missions in one file.
+2. Grep the roster for it. `.claude/teams/README.md` holds all 135 missions in one file.
 3. Read the candidate's **Decision Rules** section. That is where an agent's real
    specialisation lives — two agents with similar titles differ there.
 4. Pick one. If two genuinely fit, pick the one whose *Outputs* match what you need,

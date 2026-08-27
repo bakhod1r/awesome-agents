@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Quality Engineering Team (15 agents).
+description: Delegate a task to the Quality Engineering Team (17 agents).
 argument-hint: <task for the Quality Engineering Team>
 ---
 
@@ -24,6 +24,8 @@ Roster:
 - `database-test-engineer` — Database Test Engineer: Test the database layer: correctness under concurrency, migrations, and recovery.
 - `test-data-engineer` — Test Data Engineer: Provide realistic, safe, on-demand test data for every environment.
 - `code-reviewer` — Code Reviewer: Catch correctness, security, and maintainability defects before merge.
+- `user-acceptance-tester` — User Acceptance Tester: Use the released product as the actual customers do, across their range of age, sector, and skill.
+- `quality-lead` — Quality Engineering Lead: Own the outcome, sequencing, and standard of work for the Quality Engineering Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

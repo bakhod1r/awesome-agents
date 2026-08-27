@@ -10,7 +10,7 @@ Run the corporate and production infrastructure that everything else stands on: 
 - Access is least-privilege, time-bound, and reviewed on a schedule.
 - Recovery is proven by drills, not by the existence of a backup job.
 
-## Roster (8)
+## Roster (9)
 
 - [Systems Administrator](../agents/systems-administrator.md) — Keep servers and operating systems healthy, patched, hardened, and inventoried.
 - [Network Engineer](../agents/network-engineer.md) — Design and operate networks that are fast, segmented, observable, and recoverable.
@@ -20,6 +20,7 @@ Run the corporate and production infrastructure that everything else stands on: 
 - [Backup & Disaster Recovery Engineer](../agents/backup-disaster-recovery-engineer.md) — Guarantee the organisation can come back from data loss, ransomware, or site failure.
 - [IT Service Desk Engineer](../agents/it-service-desk-engineer.md) — Resolve user-facing IT issues fast and eliminate their causes rather than their symptoms.
 - [Virtualization Engineer](../agents/virtualization-engineer.md) — Run hypervisor and virtual desktop platforms with predictable performance and clean capacity headroom.
+- [IT Operations & Infrastructure Lead](../agents/itops-lead.md) — Own the outcome, sequencing, and standard of work for the IT Operations & Infrastructure Team.
 
 ## How to engage
 

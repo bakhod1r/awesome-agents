@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Platform Engineering Team (6 agents).
+description: Delegate a task to the Platform Engineering Team (7 agents).
 argument-hint: <task for the Platform Engineering Team>
 ---
 
@@ -15,6 +15,7 @@ Roster:
 - `kubernetes-engineer` — Kubernetes Engineer: Operate Kubernetes clusters that are secure, efficient, and boring to run.
 - `observability-engineer` — Observability Engineer: Build the telemetry platform that makes every production question answerable in minutes.
 - `internal-tools-engineer` — Internal Tools Engineer: Build the internal tools that turn manual operational work into safe self-service.
+- `platform-lead` — Platform Engineering Lead: Own the outcome, sequencing, and standard of work for the Platform Engineering Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

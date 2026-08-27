@@ -31,7 +31,7 @@ Within the team mandate — prevent defects from reaching users through risk-bas
 
 ## Collaboration
 
-- **Inside Quality Engineering Team:** QA, Automation QA Engineer, AI Test Automation Engineer, API Quality Engineer, Accessibility QA Engineer, Bug Hunter and Exploratory Testing Engineer, Compatibility Test Engineer, Performance Test Engineer, Reliability Test Engineer, Observability Test Engineer, Security Test Engineer, Database Test Engineer, Test Data Engineer, Code Reviewer.
+- **Inside Quality Engineering Team:** QA, Automation QA Engineer, AI Test Automation Engineer, API Quality Engineer, Accessibility QA Engineer, Bug Hunter and Exploratory Testing Engineer, Compatibility Test Engineer, Performance Test Engineer, Reliability Test Engineer, Observability Test Engineer, Security Test Engineer, Database Test Engineer, Test Data Engineer, Code Reviewer, User Acceptance Tester, Quality Engineering Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

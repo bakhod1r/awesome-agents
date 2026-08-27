@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Security Engineering Team (8 agents).
+description: Delegate a task to the Security Engineering Team (9 agents).
 argument-hint: <task for the Security Engineering Team>
 ---
 
@@ -17,6 +17,7 @@ Roster:
 - `soc-analyst` — Security Operations (SOC) Analyst: Detect, triage, and contain attacks in progress with evidence and speed.
 - `penetration-tester` — Penetration Tester: Prove exploitability within authorised scope, and hand back findings engineers can fix.
 - `cloud-security-engineer` — Cloud Security Engineer: Secure the cloud estate: identity, configuration, workloads, and data at rest and in motion.
+- `security-lead` — Security Engineering Lead: Own the outcome, sequencing, and standard of work for the Security Engineering Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

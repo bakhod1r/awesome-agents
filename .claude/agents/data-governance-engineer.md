@@ -31,7 +31,7 @@ Within the team mandate — keep the organisation defensible: privacy by design,
 
 ## Collaboration
 
-- **Inside Governance, Risk & Privacy Team:** Privacy Engineer, Risk Analyst, Audit Engineer, IT Policy Engineer.
+- **Inside Governance, Risk & Privacy Team:** Privacy Engineer, Risk Analyst, Audit Engineer, IT Policy Engineer, Governance, Risk & Privacy Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

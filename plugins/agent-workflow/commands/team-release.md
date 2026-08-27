@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Release & Reliability Team (5 agents).
+description: Delegate a task to the Release & Reliability Team (6 agents).
 argument-hint: <task for the Release & Reliability Team>
 ---
 
@@ -14,6 +14,7 @@ Roster:
 - `incident-response-engineer` — Incident Response Engineer: Detect, contain, and resolve incidents quickly, then make the same failure impossible.
 - `chaos-engineering-engineer` — Chaos Engineering Engineer: Find weaknesses by injecting controlled failure into real systems before reality does.
 - `production-readiness-engineer` — Production Readiness Engineer: Ensure nothing reaches production without ownership, observability, and an operational plan.
+- `release-lead` — Release & Reliability Lead: Own the outcome, sequencing, and standard of work for the Release & Reliability Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

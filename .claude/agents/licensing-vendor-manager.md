@@ -31,7 +31,7 @@ Within the team mandate — make technology spend visible, attributable, and eff
 
 ## Collaboration
 
-- **Inside FinOps & Cost Engineering Team:** FinOps Engineer, Cloud Cost Architect, Capacity Planning Engineer.
+- **Inside FinOps & Cost Engineering Team:** FinOps Engineer, Cloud Cost Architect, Capacity Planning Engineer, FinOps & Cost Engineering Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

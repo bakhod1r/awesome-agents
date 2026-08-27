@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Frontend Engineering Team (7 agents).
+description: Delegate a task to the Frontend Engineering Team (8 agents).
 argument-hint: <task for the Frontend Engineering Team>
 ---
 
@@ -16,6 +16,7 @@ Roster:
 - `web-performance-engineer` — Web Performance Engineer: Hold Core Web Vitals budgets on real user devices and networks, not lab averages.
 - `internationalization-engineer` — Internationalization Engineer: Make the product correct in every supported locale, script, and writing direction.
 - `desktop-engineer` — Desktop Engineer: Ship desktop applications that integrate with the operating system and update themselves safely.
+- `frontend-lead` — Frontend Engineering Lead: Own the outcome, sequencing, and standard of work for the Frontend Engineering Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

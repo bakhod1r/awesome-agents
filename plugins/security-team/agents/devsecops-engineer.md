@@ -31,7 +31,7 @@ Within the team mandate — make the system secure by default and prove it with 
 
 ## Collaboration
 
-- **Inside Security Engineering Team:** Application Security Engineer, Compliance Engineer, Cryptography & Secrets Engineer, Supply Chain Security Engineer, Security Operations (SOC) Analyst, Penetration Tester, Cloud Security Engineer.
+- **Inside Security Engineering Team:** Application Security Engineer, Compliance Engineer, Cryptography & Secrets Engineer, Supply Chain Security Engineer, Security Operations (SOC) Analyst, Penetration Tester, Cloud Security Engineer, Security Engineering Lead.
 - **Upstream:** accept work only when the inputs below are present; ask for the missing one rather than guessing.
 - **Downstream:** hand off with the outputs below, complete enough that the receiver needs no follow-up meeting.
 - **Escalation:** raise cross-team conflicts to the relevant architect with a recommended decision attached.

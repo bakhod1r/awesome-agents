@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Product Strategy Team (5 agents).
+description: Delegate a task to the Product Strategy Team (6 agents).
 argument-hint: <task for the Product Strategy Team>
 ---
 
@@ -14,6 +14,7 @@ Roster:
 - `business-analyst` — Business Analyst: Translate business processes and rules into precise, verifiable requirements.
 - `product-innovation-engineer` — Product Innovation Engineer: De-risk new bets quickly through prototypes and honest experiments.
 - `technical-project-manager` — Technical Project Manager Agent: Drive complex technical delivery: dependencies, risks, and truthful status.
+- `product-lead` — Product Strategy Lead: Own the outcome, sequencing, and standard of work for the Product Strategy Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.

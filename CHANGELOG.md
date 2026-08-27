@@ -11,6 +11,41 @@ For this repository the semantics are:
 - **minor** — new agents, teams, skills, commands, or rules. Additive; nothing breaks.
 - **patch** — content corrections, tooling fixes, site fixes.
 
+## [1.4.0] - 2026-08-27
+
+### Added
+
+**A lead for every team, generated from the team table.** 18 leads — `backend-lead`,
+`design-lead`, `quality-lead`, and so on — so a team cannot exist without a named decider.
+The lead owns the stage artefact, the gate verdict, and the hand-off, and never reports a
+gate passed on evidence they have not seen. Source: `scripts/agents_data_leads.py`.
+
+**Leadership Team.** `it-director` decides across teams when leads cannot agree, picking one
+position rather than averaging, and states what would reverse the decision; `delivery-manager`
+tracks cross-team dependencies and measures where work waits, since the boundary between two
+teams is nobody's specialist job.
+
+**`design-qa-engineer`.** Tests the design before it is built: the missing case, the branch
+nobody drew, the state with no way out, contrast and focus order on the mock rather than after
+the rebuild. Then compares the shipped screen to the approved mock.
+
+**`user-acceptance-tester`.** Runs the released flow as a panel of concrete profiles across
+the age range and sectors the product claims to serve, on their devices, with no instructions.
+Findings rank by how many profiles failed. The team cannot produce this evidence itself —
+everyone who built it knows where the button is.
+
+### Changed
+
+**Stage ③ ends with a design test.** `design-qa-engineer` closes the stage and an undrawn
+reachable case blocks it; `ui-designer` now draws every case the flow reaches, not only the
+main one, and an out-of-scope case must be named as such.
+
+**Stage ⑦ has three checks on three clocks:** smoke within minutes, the user panel in the
+days after, the success metric on the window discovery named.
+
+**Stage accountability is explicit.** Each stage names its lead; backward steps are reported
+by the lead who received the work; conflict surviving two attempts goes to `it-director`.
+
 ## [1.3.0] - 2026-08-27
 
 ### Added

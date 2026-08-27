@@ -1,5 +1,5 @@
 ---
-description: Delegate a task to the Design Team (5 agents).
+description: Delegate a task to the Design Team (7 agents).
 argument-hint: <task for the Design Team>
 ---
 
@@ -13,7 +13,9 @@ Roster:
 - `ux-researcher` — UX Researcher: Replace assumptions about users with evidence, before the team builds on them.
 - `interaction-designer` — Interaction Designer: Specify how a flow behaves across every state, transition, and failure.
 - `content-designer` — Content Designer: Write the words in the interface so the user knows what happened and what to do next.
+- `design-qa-engineer` — Design QA Engineer: Test the design itself before anyone builds it, then test the build against the design.
 - `design-ops-engineer` — Design Ops Engineer: Keep the design system and the codebase telling the same story, and make the handoff mechanical.
+- `design-lead` — Design Lead: Own the outcome, sequencing, and standard of work for the Design Team.
 
 1. Pick the minimum set of agents above that can complete the task. Name them and
    say in one line why each is needed.
